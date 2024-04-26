@@ -1,44 +1,67 @@
+#### 1.Tidsrapport kursvecka 1
 
-#### 1.Tidsrapport kursvecka 1 
-| Uppgift                      | Övrig | Skattad tid (timmar)| Verklig tid (timmar) |
-|---------------------------------------------|---------------|-------------|-------------|
-| Deltog i kursintroduktion.                 |         |    2    |   2    |
-| Samlade lite information angående on projects ide med kunden .    |       |    1     |   1    |
-| Initial commit från Create Next App, kollade next.js template.      |       |   3    |   4    |
-| Skapade Github repo and delade med lärare.  |      |   0.5   |   0.5  |
-| Next.js tutorial.             |   |  3.5   |   4    |
-| Samtal med kunden                     |     |   0.5      |   0.5     |
-|                    |        |         |         |
-| Tid totalt för kursvecka 1              |            |           10.5     |   12     |
-| Tid sedan föregående iteration                     |            |        |   0     |
-| Tid totalt i projektet                      |            |        |   12   |
+| Uppgift                                                        | Övrig | Skattad tid (timmar) | Verklig tid (timmar) |
+| -------------------------------------------------------------- | ----- | -------------------- | -------------------- |
+| Deltog i kursintroduktion.                                     |       | 2                    | 2                    |
+| Samlade lite information angående on projects ide med kunden . |       | 1                    | 1                    |
+| Initial commit från Create Next App, kollade next.js template. |       | 3                    | 4                    |
+| Skapade Github repo and delade med lärare.                     |       | 0.5                  | 0.5                  |
+| Next.js tutorial.                                              |       | 3.5                  | 4                    |
+| Samtal med kunden                                              |       | 0.5                  | 0.5                  |
+|                                                                |       |                      |                      |
+| Tid totalt för kursvecka 1                                     |       | 10.5                 | 12                   |
+| Tid sedan föregående iteration                                 |       |                      | 0                    |
+| Tid totalt i projektet                                         |       |                      | 12                   |
+|                                                                |       |                      |                      |
 
+#### 2.Tidsrapport kursvecka 2
 
-## _______________________________________
+| Uppgift                            | Övrig | Skattad tid (timmar) | Verklig tid (timmar) |
+| ---------------------------------- | ----- | -------------------- | -------------------- |
+| TypeScript tutorial.               |       | 12                   | 18                   |
+| Samtal med kunden                  |       | 2                    | 2                    |
+|                                    |       |                      |                      |
+| **Tid totalt för kursvecka 2 **    |       | 14                   | 20                   |
+| **Tid sedan föregående iteration** |       | 12                   | 12                   |
+| **Tid totalt i projektet **        |       |                      | 32                   |
+|                                    |       |                      |                      |
 
-#### 2.Tidsrapport kursvecka 2 
-| Uppgift                      | Övrig | Skattad tid (timmar) | Verklig tid (timmar)|
-|---------------------------------------------|---------------|-------------|-------------|
-| TypeScript tutorial.                 |         |    12   |  18 |
-| Samtal med kunden     |       |    2   |   2   |
-|                    |        |         |         |
-| **Tid totalt för kursvecka 2  **            |            |           14    |   20    |
-| **Tid sedan föregående iteration**                     |            |    12    |   12     |
-| **Tid totalt i projektet **                     |            |        |   32     |
+#### 3.Tidsrapport kursvecka 3
 
-## _______________________________________
+| Uppgift                            | Övrig | Skattad tid (timmar) | Verklig tid (timmar) |
+| ---------------------------------- | ----- | -------------------- | -------------------- |
+| Next.js tutorial.                  |       | \*\*                 | \*\*\*\*             |
+| \*\*\*\*                           |       | \*\*\*\*             | \*\*\*\*             |
+| \*\*\*\*                           |       | \*\*\*\*             | \*\*\*\*             |
+| \*\*\*\*                           |       | \*\*\*\*             | \*\*\*\*             |
+| \*\*\*\*                           |       | \*\*\*\*             | \*\*\*\*             |
+| \*\*\*\*                           |       | \*\*                 | \*\*\*\*             |
+|                                    |       |                      |                      |
+| **Tid totalt för kursvecka 3 **    |       | \*\*\*\*             | \*\*\*\*             |
+| **Tid sedan föregående iteration** |       |                      | \*\*\*\*             |
+| **Tid totalt i projektet **        |       |                      | \*\*\*\*             |
+|                                    |       |                      |                      |
 
-#### 2.Tidsrapport kursvecka 3
-| Uppgift                      | Övrig | Skattad tid (timmar) | Verklig tid (timmar)|
-|---------------------------------------------|---------------|-------------|-------------|
-| Next.js tutorial.                  |         |    **   |    **** |
-| ****    |       |    ****    |   ****   |
-| ****      |       |   ****   |  ****  |
-| **** |      |   ****   |   **** |
-| ****             |    |  ****   |   ****    |
-| ****                     |     |   **      |   ****     |
-|                    |        |         |         |
-| **Tid totalt för kursvecka 3  **            |            |           ****     |   ****    |
-| **Tid sedan föregående iteration**                     |            |        |   ****     |
-| **Tid totalt i projektet **                     |            |        |   ****     |
- 
+#### 4.Tidsrapport kursvecka 4
+
+| Uppgift                            | Övrig | Skattad tid (timmar) | Verklig tid (timmar) |
+| ---------------------------------- | ----- | -------------------- | -------------------- |
+| Pratade med kunden.                |       | 1                    | 2                    |
+|                                    |       |                      |                      |
+| **Tid totalt för kursvecka 3 **    |       | 1                    | 2                    |
+| **Tid sedan föregående iteration** |       |                      | \*\*\*\*             |
+| **Tid totalt i projektet **        |       |                      | \*\*\*\*             |
+|                                    |       |                      |                      |
+
+#### 5.Tidsrapport kursvecka 5
+
+| Uppgift                                  | Övrig | Skattad tid (timmar) | Verklig tid (timmar) |
+| ---------------------------------------- | ----- | -------------------- | -------------------- |
+| Felsökning och Skapade ett nytt projekt. |       | 3                    | 3                    |
+| \*\*\*\*                                 |       | \*\*\*\*             | \*\*\*\*             |
+| \*\*\*\*                                 |       | \*\*\*\*             | \*\*\*\*             |
+|                                          |       |                      |                      |
+| **Tid totalt för kursvecka 3 **          |       | \*\*\*\*             | \*\*\*\*             |
+| **Tid sedan föregående iteration**       |       |                      | \*\*\*\*             |
+| **Tid totalt i projektet **              |       |                      | \*\*\*\*             |
+|                                          |       |                      |                      |
