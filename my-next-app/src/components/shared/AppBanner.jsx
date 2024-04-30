@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
+import DevelopImage from '../../../public/images/developer.jpg'
 
 function AppBanner() {
 	const [activeTheme] = useThemeSwitcher();
@@ -67,12 +68,10 @@ function AppBanner() {
 				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
 			>
-				<img
-					src={
-							'/images/developer.jpg'
-					}
+				<Image
+					src={ DevelopImage }
 					alt="Developer"
-					width="800"
+					width="1000"
 				/>
 			</motion.div>
 		</motion.section>
