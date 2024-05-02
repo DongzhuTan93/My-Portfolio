@@ -40,7 +40,7 @@ function ProjectsGrid() {
                         font-general-regular 
                         text-center text-secondary-dark
                         dark:text-ternary-light
-                        text-md
+                        text-xl
                         sm:text-xl
                         mb-3
                         "
@@ -87,7 +87,7 @@ function ProjectsGrid() {
                                 dark:border-secondary-dark
                                 rounded-lg
                                 text-sm
-                                sm:text-md
+                                sm:text-xl
                                 bg-secondary-light
                                 dark:bg-ternary-dark
                                 text-primary-dark

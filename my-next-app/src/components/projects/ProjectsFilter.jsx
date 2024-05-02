@@ -19,7 +19,7 @@ function ProjectsFilter({ setSelectProject }) {
                 dark:border-secondary-dark
                 rounded-lg
                 text-sm
-                sm:text-md
+                sm:text-xl
                 dark:font-medium
                 bg-secondary-light
                 dark:bg-ternary-dark
@@ -27,12 +27,12 @@ function ProjectsFilter({ setSelectProject }) {
                 dark:text-ternary-light
             "
 		>
-			<option value={setSelectProject} className="text-sm sm:text-md">
+			<option value={setSelectProject} className="text-sm sm:text-xl">
 				All Projects
 			</option>
 
 			{selectOptions.map((option) => (
-				<option className="text-normal sm:text-md" key={option}>
+				<option className="text-normal sm:text-xl" key={option}>
 					{option}
 				</option>
 			))}

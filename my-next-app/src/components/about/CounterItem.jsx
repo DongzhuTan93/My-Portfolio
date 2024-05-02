@@ -4,7 +4,7 @@ const CounterItem = ({ title, counter, measurement }) => {
 			<h2 className="text-4xl text-center text-secondary-dark dark:text-secondary-light mb-2">
 				{counter} {measurement}
 			</h2>
-			<span className="font-general-regular block text-md text-center text-ternary-dark dark:text-ternary-light">
+			<span className="font-general-regular block text-xl text-center text-ternary-dark dark:text-ternary-light">
 				{title}
 			</span>
 		</div>

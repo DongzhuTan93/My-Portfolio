@@ -2,15 +2,13 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
 import HireMeModal from '../HireMeModal';
 import logo from '../../../public/favicon.ico';
-import useThemeSwitcher from '../../hooks/useThemeSwitcher';
+
 
 function AppHeader() {
 	const [showMenu, setShowMenu] = useState(false);
 	const [showModal, setShowModal] = useState(false);
-	const [activeTheme, setTheme] = useThemeSwitcher();
 
 	function toggleMenu() {
 		if (!showMenu) {
@@ -55,8 +53,6 @@ function AppHeader() {
 								/>
 						</Link>
 					</div>
-
-
 				</div>
 
 				{/* Header links small screen */}
@@ -127,8 +123,6 @@ function AppHeader() {
 							Hire Me
 						</button>
 					</div>
-
-					
 				</div>
 			</div>
 			<div>
