@@ -1,39 +1,23 @@
-import {
-	FiGithub,
-	FiTwitter,
-	FiLinkedin,
-	FiGlobe,
-	FiYoutube,
-} from 'react-icons/fi';
-import AppFooterCopyright from './AppFooterCopyright';
+import { FiFacebook, FiGithub, FiLinkedin } from 'react-icons/fi';
+
 
 const socialLinks = [
 	{
 		id: 1,
-		icon: <FiGlobe />,
-		url: 'https://www.stoman.me/',
+		icon: <FiFacebook  />,
+		url: 'https://www.facebook.com/profile.php?id=100011098393357',
 	},
 	{
 		id: 2,
 		icon: <FiGithub />,
-		url: 'https://github.com/realstoman',
-	},
-	{
-		id: 3,
-		icon: <FiTwitter />,
-		url: 'https://twitter.com/realstoman',
+		url: 'https://github.com/DongzhuTan93',
 	},
 	{
 		id: 4,
 		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/realstoman',
-	},
-	{
-		id: 5,
-		icon: <FiYoutube />,
-		url: 'https://www.youtube.com/c/realstoman',
-	},
-];
+		url: 'https://www.linkedin.com/in/dongzhu-tan-891b13241/',
+	}
+]; // I got inspiration here: https://react-icons.github.io/react-icons/search/#q=faceBook
 
 function AppFooter() {
 	return (
@@ -59,8 +43,6 @@ function AppFooter() {
 						))}
 					</ul>
 				</div>
-
-				<AppFooterCopyright />
 			</div>
 		</div>
 	);

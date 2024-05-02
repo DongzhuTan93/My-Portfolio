@@ -49,47 +49,14 @@ function AppHeader() {
 						<Link href="/">
 								<Image
 									src={ logo }
-									alt="Dark Logo"
+									alt="Logo"
 									width={80}
 									height={80}
 								/>
 						</Link>
 					</div>
 
-					{/* Theme switcher small screen */}
-					<div
-						onClick={() => setTheme(activeTheme)}
-						aria-label="Theme Switcher"
-						className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
-					>
-						{activeTheme === 'dark' ? (
-							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-2xl" />
-						) : (
-							<FiSun className="text-gray-200 hover:text-gray-50 text-2xl" />
-						)}
-					</div>
 
-					{/* Small screen hamburger menu */}
-					<div className="sm:hidden">
-						<button
-							onClick={toggleMenu}
-							type="button"
-							className="focus:outline-none"
-							aria-label="Hamburger Menu"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								className="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
-							>
-								{showMenu ? (
-									<FiX className="text-3xl" />
-								) : (
-									<FiMenu className="text-3xl" />
-								)}
-							</svg>
-						</button>
-					</div>
 				</div>
 
 				{/* Header links small screen */}
@@ -161,18 +128,7 @@ function AppHeader() {
 						</button>
 					</div>
 
-					{/* Theme switcher large screen */}
-					<div
-						onClick={() => setTheme(activeTheme)}
-						aria-label="Theme Switcher"
-						className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
-					>
-						{activeTheme === 'dark' ? (
-							<FiMoon className="text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light text-2xl" />
-						) : (
-							<FiSun className="text-gray-200 hover:text-gray-50 text-2xl" />
-						)}
-					</div>
+					
 				</div>
 			</div>
 			<div>
