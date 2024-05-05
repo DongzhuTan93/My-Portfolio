@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
 function AboutClientSingle({ title, image }) {
 	return (
@@ -11,7 +11,7 @@ function AboutClientSingle({ title, image }) {
 				layout='responsive'
 			/>
 		</div>
-	);
+	)
 }
 
-export default AboutClientSingle;
+export default AboutClientSingle

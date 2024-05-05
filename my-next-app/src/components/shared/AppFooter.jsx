@@ -1,26 +1,26 @@
-import { FiFacebook, FiGithub, FiLinkedin } from 'react-icons/fi';
-
+import { FiFacebook, FiGithub, FiLinkedin } from 'react-icons/fi'
 
 const socialLinks = [
-	{
-		id: 1,
-		icon: <FiFacebook  />,
-		url: 'https://www.facebook.com/profile.php?id=100011098393357',
-	},
-	{
-		id: 2,
-		icon: <FiGithub />,
-		url: 'https://github.com/DongzhuTan93',
-	},
-	{
-		id: 4,
-		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/dongzhu-tan-891b13241/',
-	}
-]; // I got inspiration here: https://react-icons.github.io/react-icons/search/#q=faceBook
+  {
+    id: 1,
+    icon: <FiFacebook />,
+    url: 'https://www.facebook.com/profile.php?id=100011098393357'
+  },
+  {
+    id: 2,
+    icon: <FiGithub />,
+    url: 'https://github.com/DongzhuTan93'
+  },
+  {
+    id: 4,
+    icon: <FiLinkedin />,
+    url: 'https://www.linkedin.com/in/dongzhu-tan-891b13241/'
+  }
+] // I got inspiration here: https://react-icons.github.io/react-icons/search/#q=faceBook
 
-function AppFooter() {
-	return (
+
+function AppFooter () {
+  return (
 		<div className="container mx-auto">
 			<div className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
 				{/* Footer social links */}
@@ -45,7 +45,7 @@ function AppFooter() {
 				</div>
 			</div>
 		</div>
-	);
+  )
 }
 
-export default AppFooter;
+export default AppFooter

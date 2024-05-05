@@ -1,15 +1,16 @@
 const selectOptions = [
-	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
-];
+  'Web Application',
+  'Mobile Application',
+  'UI/UX Design',
+  'Branding'
+]
 
-function ProjectsFilter({ setSelectProject }) {
-	return (
+
+function ProjectsFilter ({ setSelectProject }) {
+  return (
 		<select
 			onChange={(e) => {
-				setSelectProject(e.target.value);
+			  setSelectProject(e.target.value)
 			}}
 			className="
                 px-4
@@ -37,7 +38,7 @@ function ProjectsFilter({ setSelectProject }) {
 				</option>
 			))}
 		</select>
-	);
+  )
 }
 
-export default ProjectsFilter;
+export default ProjectsFilter

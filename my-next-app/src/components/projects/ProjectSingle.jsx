@@ -1,18 +1,19 @@
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import Link from 'next/link'
 
-const imageStyle = { maxWidth: '100%', height: 'auto' };
+const imageStyle = { maxWidth: '100%', height: 'auto' }
+
 
 const ProjectSingle = (props) => {
-	return (
+  return (
 		<motion.div
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1, delay: 1 }}
 			transition={{
-				ease: 'easeInOut',
-				duration: 0.7,
-				delay: 0.15,
+			  ease: 'easeInOut',
+			  duration: 0.7,
+			  delay: 0.15,
 			}}
 		>
 			<Link
@@ -43,7 +44,7 @@ const ProjectSingle = (props) => {
 				</div>
 			</Link>
 		</motion.div>
-	);
-};
+  )
+}
 
-export default ProjectSingle;
+export default ProjectSingle

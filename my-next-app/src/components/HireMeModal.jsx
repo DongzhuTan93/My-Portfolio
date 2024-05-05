@@ -1,16 +1,43 @@
-import { motion } from 'framer-motion';
-import { FiX } from 'react-icons/fi';
-import Button from './reusable/Button';
+import { motion } from 'framer-motion'
+import { FiX } from 'react-icons/fi'
 
 const selectOptions = [
-	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
-];
+  'Web Application',
+  'Mobile Application',
+  'UI/UX Design',
+  'Branding'
+]
 
-function HireMeModal({ onClose, onRequest }) {
-    return (
+
+function HireMeModal ({ onClose, onRequest }) {
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value
+    }
+
+    const response = await fetch('/api/sendMail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+
+    if (response.ok) {
+      alert('Request sent successfully!')
+      onClose() // Optionally close the modal on success.
+    } else {
+      const result = await response.json()
+      alert(`Failed to send request: ${result.error}`)
+    }
+  }
+
+  return (
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -34,7 +61,7 @@ function HireMeModal({ onClose, onRequest }) {
                         </div>
                         <div className="modal-body p-5 w-full h-full bg-white">
                             <form
-                                onSubmit={(e) => e.preventDefault()}
+                                onSubmit={handleSubmit}
                                 className="max-w-xl m-4 text-left"
                             >
                                 <input
@@ -88,7 +115,7 @@ function HireMeModal({ onClose, onRequest }) {
                 </div>
             </main>
         </motion.div>
-    );
+  )
 }
 
-export default HireMeModal;
+export default HireMeModal

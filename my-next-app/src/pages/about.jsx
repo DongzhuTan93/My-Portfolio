@@ -1,11 +1,12 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
-import AboutCounter from '../components/about/AboutCounter';
-import AboutMeBio from '../components/about/AboutMeBio';
-import PagesMetaHead from '../components/PagesMetaHead';
+import AboutCounter from '../components/about/AboutCounter'
+import AboutMeBio from '../components/about/AboutMeBio'
+import PagesMetaHead from '../components/PagesMetaHead'
 
-function about() {
-	return (
+
+function about () {
+  return (
 		<div>
 			<PagesMetaHead title="About Me" />
 
@@ -36,7 +37,7 @@ function about() {
 
 			</motion.div>
 		</div>
-	);
+  )
 }
 
-export default about;
+export default about

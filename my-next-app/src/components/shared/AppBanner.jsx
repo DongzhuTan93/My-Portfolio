@@ -1,13 +1,14 @@
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { FiArrowDownCircle } from 'react-icons/fi';
-import useThemeSwitcher from '../../hooks/useThemeSwitcher';
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import { FiArrowDownCircle } from 'react-icons/fi'
+import useThemeSwitcher from '../../hooks/useThemeSwitcher'
 import DevelopImage from '../../../public/images/developer.jpg'
 
-function AppBanner() {
-	const [activeTheme] = useThemeSwitcher();
 
-	return (
+function AppBanner () {
+  const [activeTheme] = useThemeSwitcher()
+
+  return (
 		<motion.section
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
@@ -19,21 +20,21 @@ function AppBanner() {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{
-						ease: 'easeInOut',
-						duration: 0.9,
-						delay: 0.1,
+					  ease: 'easeInOut',
+					  duration: 0.9,
+					  delay: 0.1
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Hi, Iam Linnea 
+					Hi, Iam Linnea
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{
-						ease: 'easeInOut',
-						duration: 0.9,
-						delay: 0.2,
+					  ease: 'easeInOut',
+					  duration: 0.9,
+					  delay: 0.2
 					}}
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
@@ -43,9 +44,9 @@ function AppBanner() {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{
-						ease: 'easeInOut',
-						duration: 0.9,
-						delay: 0.3,
+					  ease: 'easeInOut',
+					  duration: 0.9,
+					  delay: 0.3
 					}}
 					className="flex justify-center sm:block"
 				>
@@ -71,11 +72,11 @@ function AppBanner() {
 				<Image
 					src={ DevelopImage }
 					alt="Developer"
-					width="1000"
+					width="900"
 				/>
 			</motion.div>
 		</motion.section>
-	);
+  )
 }
 
-export default AppBanner;
+export default AppBanner

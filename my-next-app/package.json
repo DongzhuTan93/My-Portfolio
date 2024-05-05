@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@lnu/eslint-config": "^1.1.10",
     "framer-motion": "^11.1.7",
     "mailgun.js": "^10.2.1",
     "react": "^18.2.0",

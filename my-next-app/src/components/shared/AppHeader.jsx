@@ -1,38 +1,41 @@
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import HireMeModal from '../HireMeModal';
-import logo from '../../../public/favicon.ico';
+import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
+import HireMeModal from '../HireMeModal'
+import logo from '../../../public/favicon.ico'
 
 
-function AppHeader() {
-	const [showMenu, setShowMenu] = useState(false);
-	const [showModal, setShowModal] = useState(false);
+function AppHeader () {
+  const [showMenu, setShowMenu] = useState(false)
+  const [showModal, setShowModal] = useState(false)
 
-	function toggleMenu() {
-		if (!showMenu) {
-			setShowMenu(true);
-		} else {
-			setShowMenu(false);
-		}
-	}
 
-	function showHireMeModal() {
-		if (!showModal) {
-			document
-				.getElementsByTagName('html')[0]
-				.classList.add('overflow-y-hidden');
-			setShowModal(true);
-		} else {
-			document
-				.getElementsByTagName('html')[0]
-				.classList.remove('overflow-y-hidden');
-			setShowModal(false);
-		}
-	}
+function toggleMenu () {
+    if (!showMenu) {
+      setShowMenu(true)
+    } else {
+      setShowMenu(false)
+    }
+  }
 
-	return (
+
+
+function showHireMeModal () {
+    if (!showModal) {
+      document
+        .getElementsByTagName('html')[0]
+        .classList.add('overflow-y-hidden')
+      setShowModal(true)
+    } else {
+      document
+        .getElementsByTagName('html')[0]
+        .classList.remove('overflow-y-hidden')
+      setShowModal(false)
+    }
+  }
+
+  return (
 		<motion.nav
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
@@ -59,8 +62,8 @@ function AppHeader() {
 				<div
 					className={
 						showMenu
-							? 'block m-0 sm:ml-4 sm:mt-3 md:flex px-5 py-3 sm:p-0 justify-between items-center shadow-lg sm:shadow-none'
-							: 'hidden'
+						  ? 'block m-0 sm:ml-4 sm:mt-3 md:flex px-5 py-3 sm:p-0 justify-between items-center shadow-lg sm:shadow-none'
+						  : 'hidden'
 					}
 				>
 					<div className="block text-left text-2xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
@@ -126,16 +129,18 @@ function AppHeader() {
 				</div>
 			</div>
 			<div>
-				{showModal ? (
+				{showModal
+				  ? (
 					<HireMeModal
 						onClose={showHireMeModal}
 						onRequest={showHireMeModal}
 					/>
-				) : null}
+				    )
+				  : null}
 				{showModal ? showHireMeModal : null}
 			</div>
 		</motion.nav>
-	);
+  )
 }
 
-export default AppHeader;
+export default AppHeader

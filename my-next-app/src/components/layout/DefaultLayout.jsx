@@ -1,16 +1,17 @@
-import AppHeader from '../shared/AppHeader';
-import AppFooter from '../shared/AppFooter';
-import PagesMetaHead from '../PagesMetaHead';
+import AppHeader from '../shared/AppHeader'
+import AppFooter from '../shared/AppFooter'
+import PagesMetaHead from '../PagesMetaHead'
+
 
 const DefaultLayout = ({ children }) => {
-	return (
+  return (
 		<>
 			<PagesMetaHead />
 			<AppHeader />
 			<div>{children}</div>
 			<AppFooter />
 		</>
-	);
-};
+  )
+}
 
-export default DefaultLayout;
+export default DefaultLayout
