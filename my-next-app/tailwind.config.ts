@@ -18,3 +18,6 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+
+// It is okay to keep the tailwind.config.ts file even application primarily uses JavaScript and JSX. TypeScript is a Superset of JavaScript: This means that any JavaScript code is also valid TypeScript code
+// Next.js itself can handle TypeScript files seamlessly alongside JavaScript files. They will compile the TypeScript to JavaScript during the build process.

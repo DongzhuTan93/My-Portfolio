@@ -28,12 +28,12 @@ function ProjectsFilter ({ setSelectProject }) {
                 dark:text-ternary-light
             "
 		>
-			<option value={setSelectProject} className="text-sm sm:text-xl">
+			<option value="" className="text-sm sm:text-xl">
 				All Projects
-			</option>
+			</option> 
 
 			{selectOptions.map((option) => (
-				<option className="text-normal sm:text-xl" key={option}>
+				<option value ={option} className="text-normal sm:text-xl" key={option}>
 					{option}
 				</option>
 			))}
@@ -42,3 +42,5 @@ function ProjectsFilter ({ setSelectProject }) {
 }
 
 export default ProjectsFilter
+
+// React strictly enforces HTML standards where each <option> in a <select> must have a value that is a string or number.
