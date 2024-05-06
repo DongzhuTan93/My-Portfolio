@@ -26,11 +26,10 @@ const ProjectSingle = (props) => {
 					<div>
 						<Image
 							src={props.img}
-							className="rounded-t-xl border-none"
-							alt="Single Project"
-							layout='responsive'
-							width={100}
-							height={90}
+							className="rounded-t-xl border-none project-image"
+							alt="Single Project"	
+							width={320}
+							height={180}
 						/>
 					</div>
 					<div className="text-center px-4 py-6">

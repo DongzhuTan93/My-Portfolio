@@ -14,7 +14,7 @@ function AboutMeBio () {
 					height={600}
 					className="rounded-lg"
 					alt="Profile Image"
-					layout='responsive'
+					
 				/>
 			</div>
 
