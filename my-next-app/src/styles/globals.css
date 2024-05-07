@@ -19,12 +19,12 @@ a {
 }
 
 .project-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain; /* Ensures the image is scaled to fit the area without being cropped or distorted */
-}
-
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: contain; /* Ensures the image is scaled to fit the area without being cropped or distorted */
+  }
+  
 /* Fonts */
 @font-face {
   font-family: "GeneralSans-Variable";

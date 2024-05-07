@@ -6,11 +6,6 @@ const RelatedProject = {
   Projects: [
     {
       id: uuidv4(),
-      title: 'Mobile UI',
-      img: '/images/brands/adidas_color.png'
-    },
-    {
-      id: uuidv4(),
       title: 'Web Application',
       img: '/images/mobile-project-1.jpg'
     },
@@ -29,9 +24,7 @@ const RelatedProject = {
 
 console.log('RelatedProject.titles: ' + RelatedProject.Projects.map(p => p.img).join(', '))
 console.log('RelatedProject.Projects: ' + JSON.stringify(RelatedProject.Projects, null, 2))
-console.log(RelatedProject.Projects.forEach((project) => {
-  console.log(project.img)
-}))
+
 
 
 function RelatedProjects () {
