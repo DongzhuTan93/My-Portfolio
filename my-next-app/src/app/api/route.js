@@ -15,7 +15,7 @@ export default async function POST(req, res)  {
     key: process.env.MAILGUN_API_KEY || "key-yourkeyhere"
   })
 
-  if(!process.env.MAILGUN_API_KEY || !proces.env.ADMIN_EMAIL ) {
+  if(!process.env.MAILGUN_API_KEY || !process.env.ADMIN_EMAIL ) {
     return res.status(500).json({ error: "Incomplete credentials." })
   }
 
