@@ -9,7 +9,7 @@ const selectOptions = [
 ]
 
 
-function HireMeModal () {
+function HireMeModel () {
    
   const onSubmit = async (e) => {
     e.preventDefault()  // Prevent default form submission behavior.
@@ -130,4 +130,4 @@ function HireMeModal () {
   )
 }
 
-export default HireMeModal
+export default HireMeModel

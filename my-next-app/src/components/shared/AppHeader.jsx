@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import HireMeModal from '../HireMeModal'
+import HireMeModel from '../HireMeModel'
 import logo from '../../../public/favicon.ico'
 
 
@@ -158,7 +158,7 @@ function showHireMeModal () {
 			<div>
 				{showModal
 				  ? (
-					<HireMeModal
+					<HireMeModel
 						onClose={showHireMeModal}
 						onRequest={showHireMeModal}
 					/>
