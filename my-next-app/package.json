@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^11.1.7",
+    "fs-extra": "^11.2.0",
     "mailgun.js": "^10.2.1",
     "react": "^18.2.0",
     "react-codemod": "^5.4.4",

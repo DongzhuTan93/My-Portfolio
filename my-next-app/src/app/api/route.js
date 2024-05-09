@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server"
 import * as FormData from 'form-data'
 import Mailgun from 'mailgun.js'
+import fs from 'fs'
+import path from 'path'
 
 
 
@@ -8,8 +10,8 @@ import Mailgun from 'mailgun.js'
 export async function POST(req, res)  {
 
   if (req.method !== 'POST') {
-    res.status(405).json({ error: 'Method Not Allowed' })
-    return
+    return res.status(405).json({ error: 'Method Not Allowed' })
+  
   }
 
   const mailgun = new Mailgun(FormData)
@@ -20,15 +22,15 @@ export async function POST(req, res)  {
   })
 
   if(!process.env.MAILGUN_API_KEY || !process.env.ADMIN_EMAIL ) {
-    return NextResponse("Incomplete credentials." , {
-      status: 500,
-    })
+    return NextResponse("Incomplete credentials." , {status: 500})
   }
 
 
 
   try {
     const postData = await req.json()
+
+    // Mailgun data setup.
     const data = {
       from: `${postData.name} <${postData.email}> `,
       to: [process.env.ADMIN_EMAIL],
@@ -39,15 +41,27 @@ export async function POST(req, res)  {
 
     }
 
+    // Send email.
     const response = await mg.messages.create(process.env.MAILGUN_SANDBOX_URL, data)
+
+     // File storage path.
+     const filePath = path.join(process.cwd(), 'src/components/hireMe/hireMeData.json')
+     const existingData = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf8')) : []
+     existingData.push(postData)
+
+     //The fs.readFileSync() method is an inbuilt application programming interface of the fs module which is used to read the file and return its content. 
+     //The fs.existsSync() method is used to synchronously check if a file already exists in the given path or not. It returns a boolean value which indicates the presence of a file.
+     //https://www.geeksforgeeks.org/node-js-fs-existssync-method/
+     //https://www.geeksforgeeks.org/node-js-process-cwd-method/
  
-    console.log(response)
+     // Write data to file.
+     fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2), 'utf8')
    
 
-    return NextResponse.json({message:"Email sent successfully!" }, {status: 200},)
+    return NextResponse.json({message:"Email sent successfully!" }, {status: 200})
   } catch (error) {
     console.error('Error:', error)
-    return NextResponse.json({message: "Failed to send email!" }, {status: 500},)
+    return NextResponse.json({message: "Failed to send email!" }, {status: 500})
   }
 }
 
