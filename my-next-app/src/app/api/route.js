@@ -37,7 +37,7 @@ export async function POST(req, res)  {
       name:postData.name,
       email:postData.email,
       subject: postData.subject,
-      html:`<h1>${"You have received new messages, please log in to view the messages: http://localhost:3000/"}</h1>`
+      html:`<h1>${"You have received new messages, please log in to view the messages: http://localhost:3000/hireme"}</h1>`
 
     }
 
@@ -45,7 +45,7 @@ export async function POST(req, res)  {
     const response = await mg.messages.create(process.env.MAILGUN_SANDBOX_URL, data)
 
      // File storage path.
-     const filePath = path.join(process.cwd(), 'src/components/hireMe/hireMeData.json')
+     const filePath = path.join(process.cwd(), 'public/hireMeData.json')
      const existingData = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf8')) : []
      existingData.push(postData)
 
