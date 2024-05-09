@@ -20,11 +20,14 @@ export async function POST(req, res)  {
     })
   }
 
+  const exampleName = "test name"
+  const exampleEmail = "some@example.com"
+
   try {
     const postData = req.body
     const data = {
-      from: process.env.MAILGUN_SANDBOX_URL,
-      to: process.env.ADMIN_EMAIL,
+      from: `${exampleName} <${exampleEmail}>`,
+      to: [process.env.ADMIN_EMAIL],
       subject: postData.subject || "Contact from email",
       text: postData.text || "Testing some Mailgun awesomeness!",
       html: `<h1>${postData.text || "Testing some Mailgun awesomeness!"}</h1>`
