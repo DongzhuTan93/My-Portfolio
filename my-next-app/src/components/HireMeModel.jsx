@@ -9,7 +9,7 @@ const selectOptions = [
 ]
 
 
-function HireMeModel () {
+function HireMeModel ({onClose}) {
    
   const onSubmit = async (e) => {
     e.preventDefault()  // Prevent default form submission behavior.
@@ -65,7 +65,7 @@ function HireMeModel () {
                                 What project are you looking for?
                             </h5>
                             <button
-                                onSubmit={onSubmit}
+                                onClick={onClose}
                                 className="text-gray-900 px-4"
                             >
                                 <FiX className="text-3xl" />
