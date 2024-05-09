@@ -26,7 +26,7 @@ const ProjectSingle = (props) => {
 					<div>
 						<Image
 							src={props.img}
-							className="rounded-t-xl border-none project-image"
+							className="rounded-t-xl border-none w-full h-auto display: block object-fit: contain"
 							alt="Single Project"	
 							width={320}
 							height={180}

@@ -12,7 +12,7 @@ function AboutMeBio () {
 					src="/images/developer.jpg"
 					width={320}
 					height={180}
-					className="rounded-lg project-image w-full h-auto"
+					className="rounded-lg w-full h-auto display: block object-fit: contain"
 					alt="Profile Image"
 					
 				/>
