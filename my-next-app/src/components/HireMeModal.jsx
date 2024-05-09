@@ -1,26 +1,30 @@
 import { motion } from 'framer-motion'
 import { FiX } from 'react-icons/fi'
 
+
 const selectOptions = [
   'Web Application',
   'Mobile Application',
   'UI/UX Design',
-  'Branding'
 ]
 
 
-function HireMeModal ({ onClose, onRequest }) {
+function HireMeModal () {
+   
+  const onSubmit = async (e) => {
+    e.preventDefault()  // Prevent default form submission behavior.
+  
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    const formData = {
+    try {
+        
+      const formData = {
       name: e.target.name.value,
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value
     }
 
-    const response = await fetch('/api/sendMail', {
+    const response = await fetch('/api', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -28,13 +32,21 @@ function HireMeModal ({ onClose, onRequest }) {
       body: JSON.stringify(formData)
     })
 
+
+
     if (response.ok) {
-      alert('Request sent successfully!')
-      onClose() // Optionally close the modal on success.
-    } else {
-      const result = await response.json()
-      alert(`Failed to send request: ${result.error}`)
+        console.log("Request sent successfully!")
+
+      // onClose() // Optionally close the modal on success.
+     } else {
+        console.error("Can not sent response")
+     }
+
+    } catch(error) {
+        console.error('Error:', error)
     }
+
+  
   }
 
   return (
@@ -53,7 +65,7 @@ function HireMeModal ({ onClose, onRequest }) {
                                 What project are you looking for?
                             </h5>
                             <button
-                                onClick={onClose}
+                                onSubmit={onSubmit}
                                 className="text-gray-900 px-4"
                             >
                                 <FiX className="text-3xl" />
@@ -61,7 +73,7 @@ function HireMeModal ({ onClose, onRequest }) {
                         </div>
                         <div className="modal-body p-5 w-full h-full bg-white">
                             <form
-                                onSubmit={handleSubmit}
+                                onSubmit={onSubmit}
                                 className="max-w-xl m-4 text-left"
                             >
                                 <input
@@ -103,7 +115,7 @@ function HireMeModal ({ onClose, onRequest }) {
                                     aria-label="Details"
                                 ></textarea>
                                 <button
-                                    onClick={onRequest}
+                                     
                                     className="mt-6 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-4 py-2 duration-500"
                                     type="submit"
                                 >

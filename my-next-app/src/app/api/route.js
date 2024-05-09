@@ -1,11 +1,18 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from "next/server"
+
 
 import * as FormData from 'form-data'
 import Mailgun from 'mailgun.js'
 
 
+
 // In Next.js, any file inside the pages/api directory is treated as an API endpoint.
 export async function POST(req, res)  {
+
+  if (req.method !== 'POST') {
+    res.status(405).json({ error: 'Method Not Allowed' })
+    return
+  }
 
   const mailgun = new Mailgun(FormData)
 
@@ -20,17 +27,17 @@ export async function POST(req, res)  {
     })
   }
 
-  const exampleName = "test name"
-  const exampleEmail = "some@example.com"
+
 
   try {
-    const postData = req.body
+    const postData = await req.json()
     const data = {
-      from: `${exampleName} <${exampleEmail}>`,
+      from: `${postData.name} <${postData.email}> `,
       to: [process.env.ADMIN_EMAIL],
-      subject: postData.subject || "Contact from email",
-      text: postData.text || "Testing some Mailgun awesomeness!",
-      html: `<h1>${postData.text || "Testing some Mailgun awesomeness!"}</h1>`
+      name:postData.name,
+      email:postData.email,
+      subject: postData.subject,
+      text: postData.message,
 
     }
 
@@ -39,10 +46,7 @@ export async function POST(req, res)  {
     console.log(response)
    
 
-    return NextResponse.json(
-      {message:"Email sent successfully!" }, 
-      {status: 200},
-    )
+    return NextResponse.json({message:"Email sent successfully!" }, {status: 200},)
   } catch (error) {
     console.error('Error:', error)
     return NextResponse.json({message: "Failed to send email!" }, {status: 500},)
