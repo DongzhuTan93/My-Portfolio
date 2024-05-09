@@ -1,12 +1,11 @@
-
-// import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 import * as FormData from 'form-data'
 import Mailgun from 'mailgun.js'
 
 
 // In Next.js, any file inside the pages/api directory is treated as an API endpoint.
-export default async function POST(req, res)  {
+export async function POST(req, res)  {
 
   const mailgun = new Mailgun(FormData)
 
@@ -16,7 +15,9 @@ export default async function POST(req, res)  {
   })
 
   if(!process.env.MAILGUN_API_KEY || !process.env.ADMIN_EMAIL ) {
-    return res.status(500).json({ error: "Incomplete credentials." })
+    return NextResponse("Incomplete credentials." , {
+      status: 500,
+    })
   }
 
   try {
@@ -33,11 +34,15 @@ export default async function POST(req, res)  {
     const response = await mg.messages.create(process.env.MAILGUN_SANDBOX_URL, data)
  
     console.log(response)
+   
 
-    return res.status(200).json({ message: "Email sent successfully!" })
+    return NextResponse.json(
+      {message:"Email sent successfully!" }, 
+      {status: 200},
+    )
   } catch (error) {
     console.error('Error:', error)
-    return res.status(500).json({ error: "Failed to send email." })
+    return NextResponse.json({message: "Failed to send email!" }, {status: 500},)
   }
 }
 

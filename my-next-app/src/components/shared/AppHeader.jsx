@@ -35,6 +35,21 @@ function showHireMeModal () {
     }
   }
 
+  /*const links = [
+	{href: "/about", name: "About Me"},
+	{href: "/contact", name: "Contact"}
+  ]
+
+  const MyLink = (href, label) => {
+	return (
+		<div className="block text-left text-2xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
+		<Link href={href} aria-label={label}>
+			{label}
+		</Link>
+	</div>
+	)
+  }*/
+
   return (
 		<motion.nav
 			initial={{ opacity: 0 }}
@@ -71,6 +86,16 @@ function showHireMeModal () {
 							Projects
 						</Link>
 					</div>
+
+					{/* 
+						{links.map((link) => {
+							return <MyLink href={link.href} name={link.name} />
+						})}
+					*/}
+
+
+
+
 					<div className="block text-left text-2xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<Link href="/about" aria-label="About Me">
 							About Me
@@ -81,6 +106,8 @@ function showHireMeModal () {
 							Contact
 						</Link>
 					</div>
+
+
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<button
 							onClick={showHireMeModal}
