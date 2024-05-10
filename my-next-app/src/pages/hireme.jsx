@@ -1,11 +1,10 @@
-
 import FetchHireMeData from '../components/hireme/FetchHireMeData'
 
 
 function hireme () {
   return (
 		<div>
-				<FetchHireMeData />
+			<FetchHireMeData />
 		</div>
   )
 }

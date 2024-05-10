@@ -1,16 +1,5 @@
 [
-  {
-    "name": "Dongzhu Tan",
-    "email": "tandongzhu@gmail.com",
-    "subject": "Mobile Application",
-    "message": "hej igen"
-  },
-  {
-    "name": "Ida",
-    "email": "dt222ha@student.lnu.se",
-    "subject": "UI/UX Design",
-    "message": "Hi, my name is Ida and I need some help with UI/UX design. Please contact me to discuss further plans."
-  },
+ 
   {
     "name": "Stella",
     "email": "stella@gmail.com",
@@ -22,5 +11,11 @@
     "email": "Johan@icloud.com",
     "subject": "Mobile Application",
     "message": "Hej! Jag behöver lite hjälp med att driftsätta min mobil applikation. Är detta möjligt?"
+  },
+  {
+    "name": "Fredrik Jonsson ",
+    "email": "fredrikjonsson@gmail.com",
+    "subject": "Web Application",
+    "message": "Hejsan! Jag heter Fredrik. och Jag behöver en hemsida för min restaurang. Det behöver inte vara särskilt komplicerat, så länge kunderna kan se menyn och öppettiderna och restaurangens kontaktuppgifter samt att menyn och öppettiderna kan uppdateras i tid. Jag vill också veta ungefärliga priser. \n\nMvh,\nFredrik"
   }
 ]

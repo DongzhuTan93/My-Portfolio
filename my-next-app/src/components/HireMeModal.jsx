@@ -81,7 +81,7 @@ function HireMeModal ({onClose}) {
                                     name="name"
                                     type="text"
                                     required
-                                    placeholder="Name"
+                                    placeholder="Your Name"
                                     aria-label="Name"
                                 />
                                 <input
@@ -90,7 +90,7 @@ function HireMeModal ({onClose}) {
                                     name="email"
                                     type="text"
                                     required
-                                    placeholder="Email"
+                                    placeholder="Your Email"
                                     aria-label="Email"
                                 />
                                 <select
