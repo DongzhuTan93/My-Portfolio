@@ -10,5 +10,17 @@
     "email": "dt222ha@student.lnu.se",
     "subject": "UI/UX Design",
     "message": "Hi, my name is Ida and I need some help with UI/UX design. Please contact me to discuss further plans."
+  },
+  {
+    "name": "Stella",
+    "email": "stella@gmail.com",
+    "subject": "Web Application",
+    "message": "\nHello, My name is Stella I want to hire a javascript programmer to build a webapplication, please contact me! Looking forward to further cooperation. Thanks you!\n"
+  },
+  {
+    "name": "Johan",
+    "email": "Johan@icloud.com",
+    "subject": "Mobile Application",
+    "message": "Hej! Jag behöver lite hjälp med att driftsätta min mobil applikation. Är detta möjligt?"
   }
 ]

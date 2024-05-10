@@ -20,8 +20,8 @@ function FetchHireMeData() {
                         {data.map((item, index) => (
                             <li key={index} className="border-b last:border-b-0 py-4">
                                 <h2 className="text-2xl font-semibold">{item.name}</h2>
-                                <p className="text-lg text-gray-600">Email: {item.email}</p>
-                                <p className="text-lg text-gray-600">Subject: {item.subject}</p>
+                                <p className="text-xl text-gray-600">Email: {item.email}</p>
+                                <p className="text-xl text-gray-600">Subject: {item.subject}</p>
                                 <p className="text-xl text-gray-800">Message: {item.message}</p>
                             </li>
                         ))}

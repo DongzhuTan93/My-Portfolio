@@ -9,7 +9,7 @@ const selectOptions = [
 ]
 
 
-function HireMeModel ({onClose}) {
+function HireMeModal ({onClose}) {
    
   const onSubmit = async (e) => {
     e.preventDefault()  // Prevent default form submission behavior.
@@ -36,8 +36,7 @@ function HireMeModel ({onClose}) {
 
     if (response.ok) {
         console.log("Request sent successfully!")
-
-      // onClose() // Optionally close the modal on success.
+        onClose() // Close the submit form after send request success.
      } else {
         console.error("Can not sent response")
      }
@@ -130,4 +129,4 @@ function HireMeModel ({onClose}) {
   )
 }
 
-export default HireMeModel
+export default HireMeModal
