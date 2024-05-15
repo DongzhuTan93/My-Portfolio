@@ -8,13 +8,8 @@ const contacts = [
   },
   {
     id: 2,
-    name: 'Linnea@gmail.com',
+    name: 'contact@leopoldhuber.com',
     icon: <FiMail />
-  },
-  {
-    id: 3,
-    name: '0760578574',
-    icon: <FiPhone />
   }
 ]
 

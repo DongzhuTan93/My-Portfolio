@@ -1,20 +1,15 @@
-import { FiFacebook, FiGithub, FiLinkedin } from 'react-icons/fi'
+import { FiGithub, FiLinkedin } from 'react-icons/fi'
 
 const socialLinks = [
   {
-    id: 1,
-    icon: <FiFacebook />,
-    url: 'https://www.facebook.com/profile.php?id=100011098393357'
-  },
-  {
     id: 2,
     icon: <FiGithub />,
-    url: 'https://github.com/DongzhuTan93'
+    url: 'https://github.com/lhuber92'
   },
   {
     id: 4,
     icon: <FiLinkedin />,
-    url: 'https://www.linkedin.com/in/dongzhu-tan-891b13241/'
+    url: 'https://www.linkedin.com/in/leopoldhuber/'
   }
 ] // I got inspiration here: https://react-icons.github.io/react-icons/search/#q=faceBook
 
