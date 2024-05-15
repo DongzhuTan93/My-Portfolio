@@ -93,17 +93,9 @@ function showHireMeModal () {
 						})}
 					*/}
 
-
-
-
 					<div className="block text-left text-2xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<Link href="/about" aria-label="About Me">
 							About Me
-						</Link>
-					</div>
-					<div className="block text-left text-2xl text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="/contact" aria-label="Contact">
-							Contact
 						</Link>
 					</div>
 
@@ -134,12 +126,6 @@ function showHireMeModal () {
 						<Link href="/about">About Me</Link>
 					</div>
 
-					<div
-						className="block text-left text-2xl font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="Contact"
-					>
-						<Link href="/contact">Contact</Link>
-					</div>
 				</div>
 
 				{/* Header right section buttons */}
