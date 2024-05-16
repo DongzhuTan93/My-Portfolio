@@ -72,7 +72,7 @@ function AppBanner () {
 				<Image
 					src={ DevelopImage }
 					alt="Developer"
-					width="800"
+					width="600"
 				/>
 			</motion.div>
 		</motion.section>

@@ -7,27 +7,27 @@ export const projectsData = [
     title: 'Hitta vikarie',
     url: 'google-health-platform',
     category: 'Web Application',
-    img: '/images/web-project-2.jpg',
+    img: '/images/hitta-vikarie-1.jpg',
     ProjectHeader: {
       title: 'Google Health Platform',
-      publishDate: 'Jul 26, 2021',
+      publishDate: 'December 1, 2023',
       tags: 'UI / Frontend'
     },
     ProjectImages: [
       {
         id: uuidv4(),
         title: 'Google Health Platform',
-        img: '/images/ui-project-1.jpg'
+        img: '/images/hitta-vikarie-2.jpg'
       },
       {
         id: uuidv4(),
         title: 'Google Health Platform',
-        img: '/images/web-project-2.jpg'
+        img: '/images/hitta-vikarie-1.jpg'
       },
       {
         id: uuidv4(),
         title: 'Google Health Platform',
-        img: '/images/mobile-project-2.jpg'
+        img: '/images/hitta-vikarie.jpg'
       }
     ],
     ProjectInfo: {
@@ -36,7 +36,7 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Name',
-          details: 'Company Ltd'
+          details: 'Dongzhu Tan'
         },
         {
           id: uuidv4(),
@@ -46,54 +46,30 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Website',
-          details: 'https://company.com'
-        },
-        {
-          id: uuidv4(),
-          title: 'Phone',
-          details: '555 8888 888'
+          details: 'https://hittavikarie.dongzhutan.com/'
         }
       ],
-      ObjectivesHeading: 'Objective',
-      ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
       Technologies: [
         {
           title: 'Tools & Technologies',
           techs: [
-            'HTML',
-            'CSS',
             'JavaScript',
-            'Vue.js',
-            'TailwindCSS',
-            'AdobeXD'
+            'Node.js',
+            'Express',
+            'MongoDB',
+            'React.js',
+            'Git',
           ]
         }
       ],
-      ProjectDetailsHeading: 'Challenge',
+      ProjectDetailsHeading: 'Overview',
       ProjectDetails: [
         {
           id: uuidv4(),
           details:
 						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.'
-        },
-        {
-          id: uuidv4(),
-          details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?'
-        },
-        {
-          id: uuidv4(),
-          details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?'
-        },
-        {
-          id: uuidv4(),
-          details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.'
         }
-      ],
-      SocialSharingHeading: 'Share This'
+      ]
     }
   },
   {
@@ -104,24 +80,24 @@ export const projectsData = [
     img: '/images/mobile-project-2.jpg',
     ProjectHeader: {
       title: 'Phoenix Digital Agency',
-      publishDate: 'Jul 26, 2021',
+      publishDate: 'Jul 26, 2022',
       tags: 'Mobile Application'
     },
     ProjectImages: [
       {
         id: uuidv4(),
         title: 'Phoenix Digital Agency',
-        img: '/images/ui-project-1.jpg'
+        img: '/images/hippo-help.jpg'
       },
       {
         id: uuidv4(),
         title: 'Phoenix Digital Agency',
-        img: '/images/web-project-2.jpg'
+        img: '/images/hippo-help-1.jpg'
       },
       {
         id: uuidv4(),
         title: 'Phoenix Digital Agency',
-        img: '/images/mobile-project-2.jpg'
+        img: '/images/hippo-help-2.jpg'
       }
     ],
     ProjectInfo: {
@@ -130,65 +106,52 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Name',
-          details: 'Company Ltd'
+          details: 'Leopold Huber'
         },
         {
           id: uuidv4(),
           title: 'Services',
-          details: 'UI Design & Frontend Development'
+          details: 'Backend & Frontend Development'
         },
         {
           id: uuidv4(),
           title: 'Website',
-          details: 'https://company.com'
-        },
-        {
-          id: uuidv4(),
-          title: 'Phone',
-          details: '555 8888 888'
+          details: 'https://hippohelp.com/'
         }
       ],
-      ObjectivesHeading: 'Objective',
-      ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+     
       Technologies: [
         {
           title: 'Tools & Technologies',
           techs: [
-            'HTML',
-            'CSS',
+            'Typescript',
             'JavaScript',
-            'Vue.js',
+            'React.js',
             'TailwindCSS',
-            'AdobeXD'
+            'Node.js',
+            'Express',
+            'MySQL',
+            'Ubuntu',
+            'Nginx',
+            'HTML',
+            'Open AI API',
+            'Git',
           ]
         }
       ],
-      ProjectDetailsHeading: 'Challenge',
+      ProjectDetailsHeading: 'Overview',
       ProjectDetails: [
         {
           id: uuidv4(),
           details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.'
+						'Hippohelp is a map-based work exchange platform connecting hosts from all over the world with travellers who are happy to work in exchange for free food and accommodation.'
         },
         {
           id: uuidv4(),
           details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?'
+						'A side project I have been working on since 2017, Hippohelp.com, is a traveling community with over 80,000 members. The site is mainly free, but I have worked on it to get a lot of hands-on experience hosting and developing a live website for the Web, iOS and Android. It was initially built with Laravel (PHP), but I rebuilt all of it using React and React Native, on a Node backend consisting of 4 microservices.'
         },
-        {
-          id: uuidv4(),
-          details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?'
-        },
-        {
-          id: uuidv4(),
-          details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.'
-        }
-      ],
-      SocialSharingHeading: 'Share This'
-
+      ]
     }
   },
   {
@@ -196,27 +159,27 @@ export const projectsData = [
     title: 'Cleaning company',
     url: 'project-management-ui',
     category: 'UI/UX Design',
-    img: '/images/ui-project-1.jpg',
+    img: '/images/cleaning-company.jpg',
     ProjectHeader: {
       title: 'Project Management UI',
-      publishDate: 'Jul 26, 2021',
+      publishDate: 'March 26, 2021',
       tags: 'UI / Frontend'
     },
     ProjectImages: [
       {
         id: uuidv4(),
         title: 'Kabul Project Management UI',
-        img: '/images/ui-project-1.jpg'
+        img: '/images/cleaning-company-1.png'
       },
       {
         id: uuidv4(),
         title: 'Kabul Project Management UI',
-        img: '/images/web-project-2.jpg'
+        img: '/images/cleaning-company-2.jpg'
       },
       {
         id: uuidv4(),
         title: 'Kabul Project Management UI',
-        img: '/images/mobile-project-2.jpg'
+        img: '/images/cleaning-company-3.png'
       }
     ],
     ProjectInfo: {
@@ -225,7 +188,7 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Name',
-          details: 'Company Ltd'
+          details: 'Dongzhu Tan'
         },
         {
           id: uuidv4(),
@@ -235,55 +198,27 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Website',
-          details: 'https://company.com'
-        },
-        {
-          id: uuidv4(),
-          title: 'Phone',
-          details: '555 8888 888'
+          details: 'https://cleaningcompany.dongzhutan.com/'
         }
       ],
-      ObjectivesHeading: 'Objective',
-      ObjectivesDetails:
-				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+      
       Technologies: [
         {
           title: 'Tools & Technologies',
           techs: [
             'HTML',
             'CSS',
-            'JavaScript',
-            'Vue.js',
-            'TailwindCSS',
-            'AdobeXD'
           ]
         }
       ],
-      ProjectDetailsHeading: 'Challenge',
+      ProjectDetailsHeading: 'Overview',
       ProjectDetails: [
         {
           id: uuidv4(),
           details:
 						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.'
-        },
-        {
-          id: uuidv4(),
-          details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?'
-        },
-        {
-          id: uuidv4(),
-          details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?'
-        },
-        {
-          id: uuidv4(),
-          details:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.'
         }
       ],
-      SocialSharingHeading: 'Share This'
-      
     }
   }
 ]
