@@ -1,5 +1,4 @@
 [
- 
   {
     "name": "Stella",
     "email": "stella@gmail.com",
@@ -17,5 +16,11 @@
     "email": "fredrikjonsson@gmail.com",
     "subject": "Web Application",
     "message": "Hejsan! Jag heter Fredrik. och Jag behöver en hemsida för min restaurang. Det behöver inte vara särskilt komplicerat, så länge kunderna kan se menyn och öppettiderna och restaurangens kontaktuppgifter samt att menyn och öppettiderna kan uppdateras i tid. Jag vill också veta ungefärliga priser. \n\nMvh,\nFredrik"
+  },
+  {
+    "name": "Lisa Petersson",
+    "email": "lisa@icloud.com",
+    "subject": "Web Application",
+    "message": "Hallå! Jag heter Lisa och jag behöver lite hjälp med Next.js för min webbapplikation.  Ha en bra dag! Hör av dig!"
   }
 ]

@@ -77,7 +77,7 @@ export const projectsData = [
     title: 'Hippo help',
     url: 'phoenix-digital-agency',
     category: 'Mobile Application',
-    img: '/images/mobile-project-2.jpg',
+    img: '/images/hippo-help.jpg',
     ProjectHeader: {
       title: 'Phoenix Digital Agency',
       publishDate: 'Jul 26, 2022',
