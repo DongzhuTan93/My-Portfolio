@@ -9,7 +9,7 @@ function MyApp ({ Component, pageProps }) {
 		<AnimatePresence>
 			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
 				<DefaultLayout>
-					<Component {...pageProps} />
+					<Component {...pageProps} /> 
 				</DefaultLayout>
 				<UseScrollToTop />
 			</div>
@@ -18,3 +18,7 @@ function MyApp ({ Component, pageProps }) {
 }
 
 export default MyApp
+// https://nextjs.org/docs/pages/building-your-application/routing/custom-app
+// https://www.npmjs.com/package/framer-motion
+// https://www.framer.com/motion/animate-presence/
+// https://www.youtube.com/watch?v=odOpmAHxW7E
