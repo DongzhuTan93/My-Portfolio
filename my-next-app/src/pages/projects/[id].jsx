@@ -38,11 +38,11 @@ function ProjectSingle (props) {
 						<div className="mb-10 sm:mb-0" key={project.id}>
 							<Image
 								src={project.img}
-								className="rounded-xl cursor-pointer shadow-lg sm:shadow-none w-full h-auto display: block object-fit: contain"
+								className="rounded-xl cursor-pointer shadow-lg sm:shadow-none w-full display: block object-fit: contain h-full object-cover"
 								alt={project.title}
 								key={project.id}
 								width={320}
-								height={180}
+								height={320}
 							/>
 						</div>
 				  )
@@ -67,7 +67,7 @@ function ProjectSingle (props) {
 										>
 											<span>{info.title}: </span>
 											<a
-												href="https://stoman.me"
+												href="https://hippohelp.com/"
 												className={
 													info.title === 'Website' ||
 													info.title === 'Phone'

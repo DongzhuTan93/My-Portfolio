@@ -22,14 +22,14 @@ const ProjectSingle = (props) => {
 				aria-label="Single Project"
 				passHref
 			>
-				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
-					<div>
+				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark h-full">
+					<div className='h-96 object-cover'>
 						<Image
 							src={props.img}
-							className="rounded-t-xl border-none w-full h-auto display: block object-fit: contain"
+							className="rounded-t-xl border-none w-full display: block object-fit: contain h-full object-cover"
 							alt="Single Project"	
 							width={320}
-							height={180}
+							height={320}
 						/>
 					</div>
 					<div className="text-center px-4 py-6">

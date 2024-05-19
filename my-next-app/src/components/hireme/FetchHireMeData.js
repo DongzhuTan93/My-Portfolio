@@ -14,7 +14,7 @@ function FetchHireMeData() {
 
     return (
         <div className="flex justify-center bg-gray-100">
-            <div className="mb-30 mx-auto max-w-6xl bg-white shadow-lg rounded-lg p-10 mt-30">
+            <div className="mb-40 mx-auto max-w-6xl bg-white shadow-lg rounded-lg p-10 mt-40">
                 {data.length > 0 ? (
                     <ul>
                         {data.map((item, index) => (
