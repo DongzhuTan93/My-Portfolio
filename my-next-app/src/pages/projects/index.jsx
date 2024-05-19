@@ -6,7 +6,6 @@ function index () {
   return (
 		<div className="container mx-auto">
 			<PagesMetaHead title="Projects" />
-
 			<ProjectsGrid />
 		</div>
   )

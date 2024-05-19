@@ -43,7 +43,6 @@ function ProjectSingle (props) {
 								key={project.id}
 								width={320}
 								height={180}
-							
 							/>
 						</div>
 				  )

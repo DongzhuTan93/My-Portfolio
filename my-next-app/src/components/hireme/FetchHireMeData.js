@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 function FetchHireMeData() {
     const [data, setData] = useState([])
@@ -13,8 +13,8 @@ function FetchHireMeData() {
     }, [])
 
     return (
-        <div className="flex justify-center">
-            <div className="mt-20 mx-auto max-w-6xl bg-white shadow-lg rounded-lg p-4">
+        <div className="flex justify-center bg-gray-100">
+            <div className="mb-30 mx-auto max-w-6xl bg-white shadow-lg rounded-lg p-10 mt-30">
                 {data.length > 0 ? (
                     <ul>
                         {data.map((item, index) => (

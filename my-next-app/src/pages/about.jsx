@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-
 import AboutCounter from '../components/about/AboutCounter'
 import AboutMeBio from '../components/about/AboutMeBio'
 import PagesMetaHead from '../components/PagesMetaHead'
