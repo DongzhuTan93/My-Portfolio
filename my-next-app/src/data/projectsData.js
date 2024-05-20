@@ -7,7 +7,7 @@ export const projectsData = [
     title: 'Hitta vikarie',
     url: 'google-health-platform',
     category: 'Web Application',
-    img: '/images/hitta-vikarie-1.jpg',
+    img: '/images/hitta-vikarie.jpg',
     ProjectHeader: {
       title: 'Google Health Platform',
       publishDate: 'December 1, 2023',
@@ -27,7 +27,7 @@ export const projectsData = [
       {
         id: uuidv4(),
         title: 'Google Health Platform',
-        img: '/images/hitta-vikarie.jpg'
+        img: '/images/hitta-vikarie-3.jpg'
       }
     ],
     ProjectInfo: {
@@ -169,7 +169,7 @@ export const projectsData = [
       {
         id: uuidv4(),
         title: 'Kabul Project Management UI',
-        img: '/images/cleaning-company-1.png'
+        img: '/images/cleaning-company-1.jpg'
       },
       {
         id: uuidv4(),
@@ -179,7 +179,7 @@ export const projectsData = [
       {
         id: uuidv4(),
         title: 'Kabul Project Management UI',
-        img: '/images/cleaning-company-3.png'
+        img: '/images/cleaning-company-3.jpg'
       }
     ],
     ProjectInfo: {
