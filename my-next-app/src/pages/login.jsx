@@ -42,7 +42,7 @@ function LoginPage() {
               <label htmlFor="password" className="text-2xl block text-gray-700 font-bold mb-2">Password</label>
               <input
                 type="password"
-                placeholder="Email"
+                placeholder="password"
                 className="w-full px-4 py-3 text-2xl border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />

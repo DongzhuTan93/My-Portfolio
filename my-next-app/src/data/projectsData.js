@@ -5,13 +5,13 @@ export const projectsData = [
   {
     id: 1,
     title: 'Hitta vikarie',
-    url: 'google-health-platform',
+    url: 'https://hittavikarie.dongzhutan.com/',
     category: 'Web Application',
     img: '/images/hitta-vikarie.jpg',
     ProjectHeader: {
-      title: 'Google Health Platform',
+      title: 'Hitta vikarie',
       publishDate: 'December 1, 2023',
-      tags: 'UI / Frontend'
+      tags: 'Web Application'
     },
     ProjectImages: [
       {
@@ -46,7 +46,8 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Website',
-          details: 'https://hittavikarie.dongzhutan.com/'
+          details: 'https://hittavikarie.dongzhutan.com/',
+          isLink: true
         }
       ],
       Technologies: [
@@ -75,11 +76,11 @@ export const projectsData = [
   {
     id: 2,
     title: 'Hippo help',
-    url: 'phoenix-digital-agency',
+    url: 'https://hippohelp.com/',
     category: 'Mobile Application',
     img: '/images/hippo-help.jpg',
     ProjectHeader: {
-      title: 'Phoenix Digital Agency',
+      title: 'Hippo help',
       publishDate: 'Jul 26, 2022',
       tags: 'Mobile Application'
     },
@@ -116,7 +117,8 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Website',
-          details: 'https://hippohelp.com/'
+          details: 'https://hippohelp.com/',
+          isLink: true
         }
       ],
      
@@ -157,11 +159,11 @@ export const projectsData = [
   {
     id: 3,
     title: 'Cleaning company',
-    url: 'project-management-ui',
+    url: 'https://cleaningcompany.dongzhutan.com/',
     category: 'UI/UX Design',
     img: '/images/cleaning-company.jpg',
     ProjectHeader: {
-      title: 'Project Management UI',
+      title: 'Cleaning company',
       publishDate: 'March 26, 2021',
       tags: 'UI / Frontend'
     },
@@ -198,7 +200,8 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Website',
-          details: 'https://cleaningcompany.dongzhutan.com/'
+          details: 'https://cleaningcompany.dongzhutan.com/',
+          isLink: true
         }
       ],
       

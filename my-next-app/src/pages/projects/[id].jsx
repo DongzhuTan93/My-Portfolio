@@ -60,26 +60,38 @@ function ProjectSingle (props) {
 						<ul className="leading-loose">
 							{props.project.ProjectInfo.CompanyInfo.map(
 							  (info) => {
-							    return (
+								if (info.isLink) {
+									return (
+											<li
+												className="font-general-regular text-ternary-dark dark:text-ternary-light"
+												key={info.id}
+											>
+												<span>{info.title}: </span>
+												<a
+													href={info.details}
+													className={
+														info.title === 'Website' ||
+														info.title === 'Phone'
+														  ? 'hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300'
+														  : ''
+													}
+													aria-label="Project Website and Phone"
+												>
+													{info.details}
+												</a>
+											</li>
+									)
+								} else {
+									return (
 										<li
 											className="font-general-regular text-ternary-dark dark:text-ternary-light"
 											key={info.id}
 										>
-											<span>{info.title}: </span>
-											<a
-												href="https://hippohelp.com/"
-												className={
-													info.title === 'Website' ||
-													info.title === 'Phone'
-													  ? 'hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300'
-													  : ''
-												}
-												aria-label="Project Website and Phone"
-											>
+											<span>{info.title}</span>
 												{info.details}
-											</a>
 										</li>
 							    )
+								}
 							  }
 							)}
 						</ul>
