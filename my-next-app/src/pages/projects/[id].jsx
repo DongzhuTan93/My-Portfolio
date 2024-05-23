@@ -38,7 +38,7 @@ function ProjectSingle (props) {
 						<div className="mb-10 sm:mb-0" key={project.id}>
 							<Image
 								src={project.img}
-								className="rounded-xl cursor-pointer shadow-lg sm:shadow-none w-full display: block object-fit: contain h-full object-cover"
+								className="rounded-xl shadow-lg sm:shadow-none w-full display: block object-fit: contain h-full object-cover"
 								alt={project.title}
 								key={project.id}
 								width={320}
