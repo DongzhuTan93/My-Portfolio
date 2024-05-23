@@ -5,7 +5,6 @@ import fs from 'fs'
 import path from 'path'
 
 
-
 // In Next.js, any file inside the pages/api directory is treated as an API endpoint.
 export async function POST(req, res)  {
 
@@ -24,7 +23,6 @@ export async function POST(req, res)  {
   if(!process.env.MAILGUN_API_KEY || !process.env.ADMIN_EMAIL ) {
     return NextResponse("Incomplete credentials." , {status: 500})
   }
-
 
 
   try {

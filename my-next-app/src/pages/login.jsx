@@ -1,7 +1,47 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+// import { FormEvent } from 'react'
+import { useRouter } from 'next/router'
 
-function Lax() {
-  const [username, setUsername] = useState('')
+ 
+function LoginPage() {
+  const router = useRouter()
+ 
+  async function handlelogin (event) {
+    event.preventDefault()
+ 
+    const formData = new FormData(event.currentTarget)
+    const email = formData.get('email')
+    const password = formData.get('password')
+ 
+    const response = await fetch('/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password }),
+    })
+ 
+    if (response.ok) {
+      router.push('/hireme')
+    } else {
+      console.error('Sorry, you can not login.')
+    }
+  }
+ 
+  return (
+    <form onSubmit={handlelogin}>
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  )
+
+}
+
+export default LoginPage
+
+
+
+
+  /*const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
   const handleLogin = (e) => {
@@ -49,7 +89,7 @@ function Lax() {
   )
 }
 
-export default Lax
+export default LoginPage*/
 
 // https://tailwindcss.com/docs/ring-color
 // https://tailwindcss.com/docs/border-radius
