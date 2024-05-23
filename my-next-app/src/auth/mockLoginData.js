@@ -1,8 +1,8 @@
 
 export async function signIn({ email, password }) {
     const mockUser = {
-      email: 'testuser@example.com',
-      password: 'password123'
+      email: process.env.ADMIN_LOGIN_EMAIL,
+      password: process.env.ADMIN_LOGIN_PASSWORD
     }
   
     if (email === mockUser.email && password === mockUser.password) {
