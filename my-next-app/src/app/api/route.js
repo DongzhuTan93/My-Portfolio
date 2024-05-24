@@ -35,7 +35,7 @@ export async function POST(req, res)  {
       name:postData.name,
       email:postData.email,
       subject: postData.subject,
-      html:`<h1>${"You have received new messages, please log in to view the messages: http://localhost:3000/hireme"}</h1>`
+      html:`<h1>${"You have received new messages, please log in to view the messages: http://localhost:3000/login"}</h1>`
 
     }
 
