@@ -93,12 +93,12 @@ export const projectsData = [
       {
         id: uuidv4(),
         title: 'Phoenix Digital Agency',
-        img: '/images/hippo-help-1.jpg'
+        img: '/images/hippo-help-1-new.jpg'
       },
       {
         id: uuidv4(),
         title: 'Phoenix Digital Agency',
-        img: '/images/hippo-help-2.jpg'
+        img: '/images/hippo-help-2-new.jpg'
       }
     ],
     ProjectInfo: {
