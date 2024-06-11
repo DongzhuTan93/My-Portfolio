@@ -26,7 +26,7 @@ function AppBanner () {
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Hi, I am Leopold
+					Hi, I am Dong
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
@@ -67,12 +67,12 @@ function AppBanner () {
 				initial={{ opacity: 0, y: -180 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
+				className="w-full sm:w-2/3 text-right float-right mt-8 mr-10 sm:mt-0"
 			>
 				<Image
 					src={ DevelopImage }
 					alt="Developer"
-					width="700"
+					width="600"
 				/>
 			</motion.div>
 		</motion.section>

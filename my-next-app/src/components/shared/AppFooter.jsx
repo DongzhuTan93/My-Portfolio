@@ -4,12 +4,12 @@ const socialLinks = [
   {
     id: 2,
     icon: <FiGithub />,
-    url: 'https://github.com/lhuber92'
+    url: 'https://github.com/DongzhuTan93'
   },
   {
     id: 4,
     icon: <FiLinkedin />,
-    url: 'https://www.linkedin.com/in/leopoldhuber/'
+    url: 'https://www.linkedin.com/in/dongzhu-tan-891b13241/'
   }
 ] // I got inspiration here: https://react-icons.github.io/react-icons/search/#q=faceBook
 
