@@ -1,21 +1,26 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { FiArrowDownCircle } from 'react-icons/fi'
-
 import DevelopImage from '../../../public/images/developer.jpg'
+import backgroundImage from '../../../public/images/background.png'
 
 
 function AppBanner () {
-  
-
   return (
 		<motion.section
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-			className="flex flex-col sm:justify-between items-center sm:flex-row mt-5 md:mt-2"
+			className="flex flex-col sm:flex-row items-center py-5 ml-20 sm:py-10 mt-5 sm:mt-10 mb-20 px-5 sm:px-10 relative"
+			style={{
+				backgroundImage: `url(${backgroundImage.src})`,
+				backgroundSize: 'cover',
+				backgroundPosition: 'center',
+				height: '90vh', // Ensure it covers the full viewport height
+				width: '100%',
+			  }}
 		>
-			<div className="w-full md:w-1/3 text-left">
+			<div className="w-full md:w-3/4 text-left mr-20 sm:mb-0">
 				<motion.h1
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -24,7 +29,7 @@ function AppBanner () {
 					  duration: 0.9,
 					  delay: 0.1
 					}}
-					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
+					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left uppercase"
 				>
 					Hi, I am Dong
 				</motion.h1>
@@ -67,12 +72,13 @@ function AppBanner () {
 				initial={{ opacity: 0, y: -180 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-				className="w-full sm:w-2/3 text-right float-right mt-8 mr-10 sm:mt-0"
+				className="w-full sm:w-3/4 text-center sm:text-right"
 			>
 				<Image
 					src={ DevelopImage }
 					alt="Developer"
-					width="600"
+					width={500}
+					classname="w-full sm:w-auto max-w-full h-auto"
 				/>
 			</motion.div>
 		</motion.section>

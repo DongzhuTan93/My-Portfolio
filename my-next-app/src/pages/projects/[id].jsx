@@ -12,7 +12,7 @@ function ProjectSingle (props) {
 
 			{/* Header */}
 			<div>
-				<p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
+				<p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7 text-orange-600">
 					{props.project.ProjectHeader.title}
 				</p>
 				<div className="flex">

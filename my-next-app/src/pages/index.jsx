@@ -7,7 +7,7 @@ import AppBanner from '../components/shared/AppBanner'
 
 export default function Home () {
   return (
-		<div className="container mx-auto">
+		<div className="container mx-auto px-4">
 			<PagesMetaHead title="Home" />
 			<AppBanner />
 			<ProjectsGrid />

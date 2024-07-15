@@ -75,14 +75,14 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: 'Hippo help',
-    url: 'https://hippohelp.com/',
-    category: 'Mobile Application',
-    img: '/images/hippo-help.jpg',
+    title: 'CRUD Application',
+    url: 'https://crud.dongzhutan.com/',
+    category: 'Web Application',
+    img: '/images/CRUD.png',
     ProjectHeader: {
-      title: 'Hippo help',
+      title: 'CRUD Application',
       publishDate: 'Jul 26, 2022',
-      tags: 'Mobile Application'
+      tags: 'Web Application'
     },
     ProjectImages: [
       {
@@ -117,7 +117,7 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Website',
-          details: 'https://hippohelp.com/',
+          details: 'https://crud.dongzhutan.com/',
           isLink: true
         }
       ],

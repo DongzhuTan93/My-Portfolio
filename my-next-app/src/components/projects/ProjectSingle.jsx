@@ -32,7 +32,7 @@ const ProjectSingle = (props) => {
 							height={320}
 						/>
 					</div>
-					<div className="text-center px-4 py-6">
+					<div className="text-center px-4 py-6 bg-white">
 						<p className="font-general-medium text-xl md:text-2xl text-ternary-dark dark:text-ternary-light mb-2">
 							{props.title}
 						</p>

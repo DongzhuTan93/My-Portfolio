@@ -20,14 +20,14 @@ function ProjectsGrid () {
   })
 
   return (
-		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
-			<div className="text-center">
-				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+	<section className="py-5 sm:py-10 mt-5 sm:mt-10 mb-10 px-5 sm:px-10 bg-zinc-100">
+			<div className="text-center px-4 sm:px-6">
+				<p className="font-general-medium text-2xl sm:text-4xl mr-10 text-ternary-dark dark:text-ternary-light text-orange-600 font-bold">
 					Projects portfolio
 				</p>
 			</div>
 
-			<div className="mt-10 sm:mt-16">
+			<div className="mt-10 sm:mt-16 px-4 sm:px-6">
 				<h3
 					className="
                         font-general-regular
@@ -51,55 +51,13 @@ function ProjectsGrid () {
                         "
 				>
 					<div className="flex justify-between gap-2">
-						<span
-							className="
-                                hidden
-                                sm:block
-                                bg-primary-light
-                                dark:bg-ternary-dark
-                                p-2.5
-                                shadow-sm
-                                rounded-xl
-                                cursor-pointer
-                                "
-						>
-							<FiSearch className="text-ternary-dark dark:text-ternary-light w-5 h-5"></FiSearch>
-						</span>
-						<input
-							onChange={(e) => {
-							  setSearchProject(e.target.value)
-							}}
-							className="
-                                ont-general-medium
-                                pl-3
-                                pr-1
-                                sm:px-4
-                                py-2
-                                border
-                            border-gray-200
-                                dark:border-secondary-dark
-                                rounded-lg
-                                text-sm
-                                sm:text-xl
-                                bg-secondary-light
-                                dark:bg-ternary-dark
-                                text-primary-dark
-                                dark:text-ternary-light
-                                "
-							id="name"
-							name="name"
-							type="search"
-							required=""
-							placeholder="Search Projects"
-							aria-label="Name"
-						/>
+				
 					</div>
-
 					<ProjectsFilter setSelectProject={setSelectProject} />
 				</div>
 			</div>
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-5">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-5 px-4 sm:px-6">
 				{selectProject
 				  ? selectProjectsByCategory.map((project, index) => {
 				    return <ProjectSingle key={index} {...project} />
