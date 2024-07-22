@@ -1,7 +1,7 @@
 const selectOptions = [
   'Web Application',
   'Mobile Application',
-  'UI/UX Design'
+  'UI Design'
 ]
 
 
@@ -28,7 +28,7 @@ function ProjectsFilter ({ setSelectProject }) {
             "
 		>
 			<option value="" className="text-sm sm:text-xl">
-				All Projects
+        Alla projekt
 			</option> 
 
 			{selectOptions.map((option) => (

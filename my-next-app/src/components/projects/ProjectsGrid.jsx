@@ -38,7 +38,7 @@ function ProjectsGrid () {
                         mb-3
                         "
 				>
-					Search projects by title or filter by category
+					Sök efter projekt efter titel eller filtrera efter kategori
 				</h3>
 				<div
 					className="
@@ -57,7 +57,7 @@ function ProjectsGrid () {
 				</div>
 			</div>
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-5 px-4 sm:px-6">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-base mt-6 sm:gap-5 px-4 sm:px-6">
 				{selectProject
 				  ? selectProjectsByCategory.map((project, index) => {
 				    return <ProjectSingle key={index} {...project} />

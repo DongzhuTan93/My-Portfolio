@@ -5,7 +5,7 @@ import { FiX } from 'react-icons/fi'
 const selectOptions = [
   'Web Application',
   'Mobile Application',
-  'UI/UX Design',
+  'UI Design',
 ]
 
 
@@ -61,7 +61,7 @@ function HireMeModal ({onClose}) {
                     <div className="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-gray-50 shadow-lg flex-row rounded-lg relative">
                         <div className="modal-header flex justify-between p-5 border-b border-gray-300">
                             <h5 className="text-gray-900 text-xl">
-                                What project are you looking for?
+                                Hålla kontakten!
                             </h5>
                             <button
                                 onClick={onClose}
@@ -81,7 +81,7 @@ function HireMeModal ({onClose}) {
                                     name="name"
                                     type="text"
                                     required
-                                    placeholder="Your Name"
+                                    placeholder="Ditt namn"
                                     aria-label="Name"
                                 />
                                 <input
@@ -90,7 +90,7 @@ function HireMeModal ({onClose}) {
                                     name="email"
                                     type="text"
                                     required
-                                    placeholder="Your Email"
+                                    placeholder="E-post"
                                     aria-label="Email"
                                 />
                                 <select
@@ -110,7 +110,7 @@ function HireMeModal ({onClose}) {
                                     name="message"
                                     cols="30"
                                     rows="6"
-                                    placeholder="Project description"
+                                    placeholder="Meddelande"
                                     aria-label="Details"
                                 ></textarea>
                                 <button
@@ -118,7 +118,7 @@ function HireMeModal ({onClose}) {
                                     className="mt-6 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-4 py-2 duration-500"
                                     type="submit"
                                 >
-                                    Send Request
+                                    Skicka
                                 </button>
                             </form>
                         </div>

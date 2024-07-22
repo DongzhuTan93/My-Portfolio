@@ -6,53 +6,53 @@ export const projectsData = [
     id: 1,
     title: 'Hitta vikarie',
     url: 'https://hittavikarie.dongzhutan.com/',
-    category: 'Web Application',
+    category: 'Webbapplikation',
     img: '/images/hitta-vikarie.jpg',
     ProjectHeader: {
       title: 'Hitta vikarie',
       publishDate: 'December 1, 2023',
-      tags: 'Web Application'
+      tags: 'Webbapplikation'
     },
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'Google Health Platform',
-        img: '/images/hitta-vikarie-2.jpg'
+        title: 'hitta-vikarie',
+        img: '/images/hitta-vikarie-2.png'
       },
       {
         id: uuidv4(),
-        title: 'Google Health Platform',
+        title: 'hitta-vikarie',
         img: '/images/hitta-vikarie-1.jpg'
       },
       {
         id: uuidv4(),
-        title: 'Google Health Platform',
-        img: '/images/hitta-vikarie-3.jpg'
+        title: 'hitta-vikarie',
+        img: '/images/hitta-vikarie-3.png'
       }
     ],
     ProjectInfo: {
-      ClientHeading: 'About Client',
+      ClientHeading: 'Om klienten',
       CompanyInfo: [
         {
           id: uuidv4(),
-          title: 'Name',
+          title: 'Namn: ',
           details: 'Dongzhu Tan'
         },
         {
           id: uuidv4(),
-          title: 'Services',
-          details: 'Web Development'
+          title: 'Typ av applikation: ',
+          details: 'Webbapplikation'
         },
         {
           id: uuidv4(),
-          title: 'Website',
+          title: 'Klicka här för att komma till hemsidan',
           details: 'https://hittavikarie.dongzhutan.com/',
           isLink: true
         }
       ],
       Technologies: [
         {
-          title: 'Tools & Technologies',
+          title: 'Verktyg och teknik',
           techs: [
             'JavaScript',
             'Node.js',
@@ -63,60 +63,70 @@ export const projectsData = [
           ]
         }
       ],
-      ProjectDetailsHeading: 'Overview',
+      ProjectDetailsHeading: 'Översikt',
       ProjectDetails: [
         {
           id: uuidv4(),
           details:
-          '"hitta vikarie" aims to build an efficient and convenient communication platform for employers and job seekers to meet.'
-        }
+          '"Hitta vikarie" är en webbplats utformad med målet av att skapa en effektiv och användarvänlig kommunikationsplattform för både arbetsgivare och arbetssökande. Genom den här webbplatsen kan arbetssökande skapa ett konto, ge sina kontaktuppgifter, detaljera sin arbetserfarenhet och ange sina tillgängliga arbetstider. På samma sätt kan arbetsgivare registrera sig och få tillgång till en lista över tillgängliga arbetssökande för en viss tidsperiod. Detta gör det möjligt för arbetsgivare att effektivt granska och kontakta lämpliga kandidater.'
+        },
+        {
+          id: uuidv4(),
+          details:
+						'Det som sticker ut med "Hitta Vikarie" är dess förmåga att effektivisera anställningsprocessen. Till skillnad från traditionella jobbsökningswebbplatser som kräver att arbetsgivare sållar igenom flertalet Cv:n, så möjliggör plattformen en snabb och enkel identifiering av lämpliga deltidsanställda. Det utförs genom de avancerade filtreringsmöjligheterna. Arbetssökande, inklusive studenter, pensionärer och arbetslösa, kan använda webbplatsen gratis för att hitta deltidsjobb som motsvarar deras tillgänglighet och kompetens.'
+        },
+        {
+          id: uuidv4(),
+          details:
+						'Detta är mitt första individuella fullstack-projekt och genom dess utveckling lärde jag mig hur man använder React för första gången. Denna erfarenhet har avsevärt förbättrat min förståelse för moderna ramverk för webbutveckling och gett mig värdefulla insikter om fullstack utveckling.'
+        },
       ]
     }
   },
   {
     id: 2,
-    title: 'CRUD Application',
+    title: 'CRUD Applikation',
     url: 'https://crud.dongzhutan.com/',
-    category: 'Web Application',
-    img: '/images/CRUD.png',
+    category: 'Webbapplikation',
+    img: '/images/crud.png',
     ProjectHeader: {
       title: 'CRUD Application',
-      publishDate: 'Jul 26, 2022',
-      tags: 'Web Application'
+      publishDate: 'Juli 26, 2022',
+      tags: 'Webbapplikation'
     },
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'Phoenix Digital Agency',
-        img: '/images/hippo-help.jpg'
+        title: 'crud',
+        img: '/images/crud-login.png'
       },
       {
         id: uuidv4(),
-        title: 'Phoenix Digital Agency',
-        img: '/images/hippo-help-1-new.jpg'
+        title: 'crud',
+        img: '/images/crud-showSnippets.png'
       },
       {
         id: uuidv4(),
-        title: 'Phoenix Digital Agency',
-        img: '/images/hippo-help-2-new.jpg'
+        title: 'crud',
+        img: '/images/crud-home.png'
       }
     ],
     ProjectInfo: {
-      ClientHeading: 'About Client',
+      ClientHeading: 'Om klienten',
       CompanyInfo: [
         {
           id: uuidv4(),
-          title: 'Name',
-          details: 'Leopold Huber'
+          title: 'Namn: ',
+          details: 'Dongzhu Tan'
         },
         {
           id: uuidv4(),
-          title: 'Services',
+          title: 'Typ av applikation: ',
           details: 'Backend & Frontend Development'
         },
         {
           id: uuidv4(),
-          title: 'Website',
+          title: 'Klicka här för att komma till hemsidan',
           details: 'https://crud.dongzhutan.com/',
           isLink: true
         }
@@ -124,47 +134,42 @@ export const projectsData = [
      
       Technologies: [
         {
-          title: 'Tools & Technologies',
+          title: 'Verktyg och teknik',
           techs: [
-            'Typescript',
             'JavaScript',
-            'React.js',
-            'TailwindCSS',
             'Node.js',
             'Express',
-            'MySQL',
-            'Ubuntu',
-            'Nginx',
-            'HTML',
-            'Open AI API',
+            'MongoDB',
             'Git',
+            'Html',
+            'CSS'
           ]
         }
       ],
-      ProjectDetailsHeading: 'Overview',
+      ProjectDetailsHeading: 'Översikt',
       ProjectDetails: [
         {
           id: uuidv4(),
           details:
-						'Hippohelp is a map-based work exchange platform connecting hosts from all over the world with travellers who are happy to work in exchange for free food and accommodation.'
+						'"Our Snippets" är en webbapplikation som tillåter användare att skapa ett konto, registrera sig, logga in och hantera sina kodsnuttar. De viktigaste funktionerna inkluderar att skapa, läsa, uppdatera och ta bort (CRUD) utdrag. Användaren kan även se utdrag som skapats av andra, men för att skapa sina egna måste de logga in. Dessutom kan användare bara ändra eller ta bort sina egna utdrag, vilket säkerställer dataintegritet och användarspecifik innehållshantering. Efter att användaren utfört en inloggning visas en "Logga ut"-knapp. Genom att klicka på den här knappen loggas användaren ut och återgår till startsidan.'
         },
         {
           id: uuidv4(),
           details:
-						'A side project I have been working on since 2017, Hippohelp.com, is a traveling community with over 80,000 members. The site is mainly free, but I have worked on it to get a lot of hands-on experience hosting and developing a live website for the Web, iOS and Android. It was initially built with Laravel (PHP), but I rebuilt all of it using React and React Native, on a Node backend consisting of 4 microservices.'
+						'I det här projektet har jag lärt mig grunderna i att bygga en CRUD-applikation, vilket har givit mig en djupare praktisk erfarenhet av full-stack-utveckling.'
         },
       ]
     }
   },
   {
     id: 3,
-    title: 'Cleaning company',
+    title: 'Städföretag',
     url: 'https://cleaningcompany.dongzhutan.com/',
-    category: 'UI/UX Design',
+    category: 'UI Design',
     img: '/images/cleaning-company.jpg',
     ProjectHeader: {
-      title: 'Cleaning company',
-      publishDate: 'March 26, 2021',
+      title: 'Dong städ',
+      publishDate: 'Mars 26, 2021',
       tags: 'UI / Frontend'
     },
     ProjectImages: [
@@ -185,21 +190,21 @@ export const projectsData = [
       }
     ],
     ProjectInfo: {
-      ClientHeading: 'About Client',
+      ClientHeading: 'Om klienten',
       CompanyInfo: [
         {
           id: uuidv4(),
-          title: 'Name',
+          title: 'Namn: ',
           details: 'Dongzhu Tan'
         },
         {
           id: uuidv4(),
-          title: 'Services',
-          details: 'UI Design & Frontend Development'
+          title: 'Typ av applikation: ',
+          details: 'UI Design'
         },
         {
           id: uuidv4(),
-          title: 'Website',
+          title: 'Klicka här för att komma till hemsidan',
           details: 'https://cleaningcompany.dongzhutan.com/',
           isLink: true
         }
@@ -207,19 +212,29 @@ export const projectsData = [
       
       Technologies: [
         {
-          title: 'Tools & Technologies',
+          title: 'Verktyg och teknik',
           techs: [
             'HTML',
             'CSS',
           ]
         }
       ],
-      ProjectDetailsHeading: 'Overview',
+      ProjectDetailsHeading: 'Översikt',
       ProjectDetails: [
         {
           id: uuidv4(),
           details:
-						'This is a presentation assignment when I was studying. Through this project, you can see my interaction design and ideas on user interface.'
+						'"Dong städ" är en simulering av en städföretags hemsida, Detta projekt skapades som en del av en presentationsuppgift under mina studier. Webbplatsen låter kunderna utforska olika städtjänster och deras tillhörande priser. Utöver tjänster och priser så innehåller hemsidan även ett kontaktformulär från vilket kunderna kan nå ut till företaget direkt.'
+        },
+        {
+          id: uuidv4(),
+          details:
+						'Detta var den första webbplatsen jag byggde med HTML och CSS under mitt första år på Linnéuniversitetet. Som följd av projektet upptäckte jag min passion för front-end webbdesign och utveckling av användargränssnitt. Hemsidan visar upp min första satsning på interaktionsdesign, samtidigt som den visar min egna förmåga i att skapa intuitiva och visuellt tilltalande webbsidor.'
+        },
+        {
+          id: uuidv4(),
+          details:
+						'Genom att besöka Dong städ, kan du se mina första steg i världen till målet som fullstackutvecklare. Det visar mitt tidiga arbete inom webbutveckling och mina grundläggande färdigheter inom UI-design. Detta projekt lade grunden för min fortsatta tillväxt och intresse för området webbutveckling.'
         }
       ],
     }

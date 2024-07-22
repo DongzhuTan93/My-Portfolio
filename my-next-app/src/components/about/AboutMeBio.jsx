@@ -22,15 +22,15 @@ function AboutMeBio () {
       <div className="bg-white bg-opacity-90 mx-auto max-w-6xl p-8 rounded-lg mb-40">
         <div className="flex flex-col lg:flex-row items-start gap-10">
           <motion.div 
-            className="w-full lg:w-2/4 mb-7 lg:mb-0"
+            className="w-full lg:w-2/2 mb-7 lg:mb-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.4 }}
           >
             <Image
-              src="/images/developer.jpg"
-              width={500}
-              height={500}
+              src="/images/about-me.jpg"
+              width={800}
+              height={1000}
               className="rounded-lg w-full h-auto object-cover"
               alt="Profile Image"
             />
@@ -40,7 +40,7 @@ function AboutMeBio () {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.6 }}
-            className="w-full lg:w-1/2"
+            className="w-full lg:w-2/2"
           >
             <motion.h1
               initial={{ opacity: 0 }}
@@ -48,7 +48,7 @@ function AboutMeBio () {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-left ml-10 uppercase mb-4 ml-10"
             >
-              Hi! My name is Dong,
+              Hej!
             </motion.h1>
            
             {aboutMe.map((bio) => (

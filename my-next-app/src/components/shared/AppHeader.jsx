@@ -68,12 +68,12 @@ function showHireMeModal () {
 				>
 					<div className="block text-left text-3xl block sm:mx-6 mb-2 sm:py-2">
 						<Link href="/projects" aria-label="Projects">
-							Projects
+							Projekt
 						</Link>
 					</div>
 					<div className="block text-left text-3xl sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0">
-						<Link href="/about" aria-label="About Me">
-							About Me
+						<Link href="/about" aria-label="Om mig">
+							Om mig
 						</Link>
 					</div>
 
@@ -84,7 +84,7 @@ function showHireMeModal () {
 							className="font-general-medium sm:hidden block text-left text-2xl bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
 							aria-label="Hire Me Button"
 						>
-							Contact Me
+							Kontakta mig
 						</button>
 					</div>
 				</div>
@@ -99,9 +99,9 @@ function showHireMeModal () {
 					</div>
 					<div
 						className="block text-left text-2xl font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light mt-2 sm:mx-6 mb-2 sm:py-2"
-						aria-label="About Me"
+						aria-label="Om mig"
 					>
-						<Link href="/about">About Me</Link>
+						<Link href="/about">Om mig</Link>
 					</div>
 
 				</div>
@@ -114,7 +114,7 @@ function showHireMeModal () {
 							className="text-md text-2xl font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 							aria-label="Hire Me Button"
 						>
-							Contact Me
+							Kontakta mig
 						</button>
 					</div>
 				</div>

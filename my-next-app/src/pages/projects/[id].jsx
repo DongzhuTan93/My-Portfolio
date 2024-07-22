@@ -41,8 +41,8 @@ function ProjectSingle (props) {
 								className="rounded-xl shadow-lg sm:shadow-none w-full display: block object-fit: contain h-full object-cover"
 								alt={project.title}
 								key={project.id}
-								width={320}
-								height={320}
+								width={500}
+								height={500}
 							/>
 						</div>
 				  )
@@ -57,22 +57,22 @@ function ProjectSingle (props) {
 						<p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
 							{props.project.ProjectInfo.ClientHeading}
 						</p>
-						<ul className="leading-loose">
+						<ul className="leading-loose text-xl">
 							{props.project.ProjectInfo.CompanyInfo.map(
 							  (info) => {
 								if (info.isLink) {
 									return (
 											<li
-												className="font-general-regular text-ternary-dark dark:text-ternary-light"
+												className="font-general-regular text-ternary-dark dark:text-ternary-light text-xl"
 												key={info.id}
 											>
 												<span>{info.title}: </span>
 												<a
 													href={info.details}
 													className={
-														info.title === 'Website' ||
+														info.title === 'Klicka här för att komma till hemsidan' ||
 														info.title === 'Phone'
-														  ? 'hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300'
+														  ? 'hover:underline hover:text-indigo-500 text-orange-600 font-semibold dark:hover:text-indigo-400 cursor-pointer text-2xl duration-300'
 														  : ''
 													}
 													aria-label="Project Website and Phone"
@@ -84,7 +84,7 @@ function ProjectSingle (props) {
 								} else {
 									return (
 										<li
-											className="font-general-regular text-ternary-dark dark:text-ternary-light"
+											className="font-general-regular text-ternary-dark dark:text-ternary-light text-xl"
 											key={info.id}
 										>
 											<span>{info.title}</span>
@@ -112,7 +112,7 @@ function ProjectSingle (props) {
 						<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
 							{props.project.ProjectInfo.Technologies[0].title}
 						</p>
-						<p className="font-general-regular text-primary-dark dark:text-ternary-light">
+						<p className="font-general-regular text-primary-dark dark:text-ternary-light text-xl">
 							{props.project.ProjectInfo.Technologies[0].techs.join(
 							  ', '
 							)}
@@ -129,14 +129,14 @@ function ProjectSingle (props) {
 
 				{/*  Single project right section details */}
 				<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-					<p className="text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
+					<p className="text-primary-dark dark:text-primary-light text-3xl font-bold mb-7">
 						{props.project.ProjectInfo.ProjectDetailsHeading}
 					</p>
 					{props.project.ProjectInfo.ProjectDetails.map((details) => {
 					  return (
 							<p
 								key={details.id}
-								className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light"
+								className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light text-xl"
 							>
 								{details.details}
 							</p>
