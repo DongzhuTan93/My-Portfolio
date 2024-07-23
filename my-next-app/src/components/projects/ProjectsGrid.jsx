@@ -37,7 +37,7 @@ function ProjectsGrid () {
                         mb-3
                         "
 				>
-					Sök efter projekt efter titel eller filtrera efter kategori
+					Du kan också filtrera efter kategori
 				</h3>
 				<div
 					className="
