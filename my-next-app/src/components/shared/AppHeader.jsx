@@ -67,7 +67,7 @@ function showHireMeModal () {
 					}
 				>
 					<div className="block text-left text-3xl block sm:mx-6 mb-2 sm:py-2">
-						<Link href="/projects" aria-label="Projects">
+						<Link href="/projects" aria-label="Projekt">
 							Projekt
 						</Link>
 					</div>
@@ -93,9 +93,9 @@ function showHireMeModal () {
 				<div className="font-general-medium hidden m-0 sm:ml-4 sm:mr-4 mr-4 mt-5 mb-5 sm:mt-5 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
 					<div
 						className="block text-left text-2xl font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light mt-2 sm:mx-6 mb-2 sm:py-2"
-						aria-label="Projects"
+						aria-label="Projekt"
 					>
-						<Link href="/projects">Projects</Link>
+						<Link href="/projects">Projekt</Link>
 					</div>
 					<div
 						className="block text-left text-2xl font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light mt-2 sm:mx-6 mb-2 sm:py-2"
