@@ -224,7 +224,7 @@ export const projectsData = [
         {
           id: uuidv4(),
           details:
-						'"Dong städ" är en simulering av en städföretags hemsida, Detta projekt skapades som en del av en presentationsuppgift under mina studier. Webbplatsen låter kunderna utforska olika städtjänster och deras tillhörande priser. Utöver tjänster och priser så innehåller hemsidan även ett kontaktformulär från vilket kunderna kan nå ut till företaget direkt.'
+						'"Dong städ" är en simulering av ett städföretags hemsida, Detta projekt skapades som en del av en presentationsuppgift under mina studier. Webbplatsen låter kunderna utforska olika städtjänster och deras tillhörande priser. Utöver tjänster och priser så innehåller hemsidan även ett kontaktformulär från vilket kunderna kan nå ut till företaget direkt.'
         },
         {
           id: uuidv4(),
