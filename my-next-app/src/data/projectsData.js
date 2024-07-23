@@ -88,7 +88,7 @@ export const projectsData = [
     title: 'CRUD Applikation',
     url: 'https://crud.dongzhutan.com/',
     category: 'Webbapplikation',
-    img: '/images/crud.png',
+    img: '/images/crud.jpg',
     ProjectHeader: {
       title: 'CRUD Application',
       publishDate: 'Juli 26, 2022',

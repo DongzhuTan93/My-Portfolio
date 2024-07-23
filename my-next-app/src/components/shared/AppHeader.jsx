@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import HireMeModal from '../HireMeModal'
-import logo from '../../../public/images/home-logo.png'
+import logo from '../../../public/images/home-logo.jpg'
 
 
 function AppHeader () {
