@@ -13,7 +13,7 @@ function MySkills() {
 			{skills.map((skill, index) => (
 			  <div
 				key={index}
-				className="bg-white dark:bg-zinc-800 rounded-md text-center text-2xl "
+				className="bg-white rounded-md text-center text-2xl "
 				style={{
 				  height: '90px',
 				  display: 'flex',
@@ -22,7 +22,7 @@ function MySkills() {
 				  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08)'
 				}}
 			  >
-				<span className="text-2xl sm:text-sm text-gray-900 dark:text-gray-300">{skill}</span>
+				<span className="text-2xl sm:text-sm text-gray-900 ">{skill}</span>
 			  </div>
 			))}
 		  </div>

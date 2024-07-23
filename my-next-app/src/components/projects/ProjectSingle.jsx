@@ -22,7 +22,7 @@ const ProjectSingle = (props) => {
 				aria-label="Single Project"
 				passHref
 			>
-				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark h-full">
+				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light h-full">
 					<div className='h-96 object-cover'>
 						<Image
 							src={props.img}
@@ -33,10 +33,10 @@ const ProjectSingle = (props) => {
 						/>
 					</div>
 					<div className="text-center px-4 py-6 bg-white">
-						<p className="font-general-medium text-xl md:text-2xl text-ternary-dark dark:text-ternary-light mb-2">
+						<p className="font-general-medium text-xl md:text-2xl text-ternary-dark mb-2">
 							{props.title}
 						</p>
-						<span className="text-lg text-ternary-dark dark:text-ternary-light">
+						<span className="text-lg text-ternary-dark ">
 							{props.category}
 						</span>
 					</div>
