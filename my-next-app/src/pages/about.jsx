@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import MySkills from '../components/about/MySkills'
+import MySkills from '../components/about/Myskills'
 import AboutMeBio from '../components/about/AboutMeBio'
 import PagesMetaHead from '../components/PagesMetaHead'
 
