@@ -235,8 +235,75 @@ export const projectsData = [
           id: uuidv4(),
           details:
 						'Genom att besöka Dong städ, kan du se mina första steg i världen till målet som fullstackutvecklare. Det visar mitt tidiga arbete inom webbutveckling och mina grundläggande färdigheter inom UI-design. Detta projekt lade grunden för min fortsatta tillväxt och intresse för området webbutveckling.'
+        },
+      ]
+    }
+  },
+  {
+    id: 4,
+    title: 'Grafik99/Bildverket',
+    url: 'https://grafik99.com/',
+    category: 'UI Design',
+    img: '/images/grafik99.png',
+    ProjectHeader: {
+      title: 'Grafik99/Bildverket',
+      publishDate: 'Maj 26, 2024',
+      tags: 'UI / Frontend'
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: 'Kabul Project Management UI',
+        img: '/images/grafik99-after.png'
+      },
+      {
+        id: uuidv4(),
+        title: 'Kabul Project Management UI',
+        img: '/images/grafik99-logo.jpg'
+      },
+      {
+        id: uuidv4(),
+        title: 'Kabul Project Management UI',
+        img: '/images/grafik99-before.png'
+      }
+    ],
+    ProjectInfo: {
+      ClientHeading: 'Om klienten',
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: 'Namn: ',
+          details: 'Grafik99/Bildverket'
+        },
+        {
+          id: uuidv4(),
+          title: 'Typ av applikation: ',
+          details: 'UI Design'
+        },
+        {
+          id: uuidv4(),
+          title: 'Klicka här för att komma till hemsidan',
+          details: 'https://grafik99.com/',
+          isLink: true
         }
       ],
+      
+      Technologies: [
+        {
+          title: 'Verktyg och teknik',
+          techs: [
+            'WordPress',
+          ]
+        }
+      ],
+      ProjectDetailsHeading: 'Översikt',
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+						'Projektet fokuserade på att göra om den nuvarande föreningens hemsida till en mer modern utseende. Jag och min partner valde som ett första steg i process att titta på den nuvarande webbplatsen för att bestämma vad som kan behållas och vad som måste göras om. Vidare diskuterades vi den nuvarande strukturen och de önskemål som föreningen la fram. Avslutningssvis utfördes arbetet i Wordpress som den äldre versionen var utformad i, ett hinder i arbetet var hur föreingen skall kunna sköta föreningens webbsida själva och därefter föll valet i att behålla snarlik struktur och därav föll valet på behållandet av att använda sig utav wordpress, Slutligen så ändrades temat till ett ljusare och textfonterna till ett som var mer överskådligt och lättläst.'
+        }
+      ]
     }
-  }
+  },
 ]

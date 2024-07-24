@@ -16,7 +16,7 @@ function AppBanner () {
 				backgroundImage: `url(${backgroundImage.src})`,
 				backgroundSize: 'cover',
 				backgroundPosition: 'center',
-				height: '90vh', // Ensure it covers the full viewport height
+				height: '100%', // Ensure it covers the full viewport height
 				width: '100%',
 			  }}
 		>
