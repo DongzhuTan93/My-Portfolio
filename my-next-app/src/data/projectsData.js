@@ -16,17 +16,17 @@ export const projectsData = [
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'hitta-vikarie',
+        title: 'hitta-vikarie-2',
         img: '/images/hitta-vikarie-2.png'
       },
       {
         id: uuidv4(),
-        title: 'hitta-vikarie',
+        title: 'hitta-vikarie-1',
         img: '/images/hitta-vikarie-1.jpg'
       },
       {
         id: uuidv4(),
-        title: 'hitta-vikarie',
+        title: 'hitta-vikarie-3',
         img: '/images/hitta-vikarie-3.png'
       }
     ],
@@ -85,30 +85,30 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: 'CRUD Applikation',
-    url: 'https://crud.dongzhutan.com/',
+    title: 'Weather Forecast',
+    url: 'https://grafik99.com/',
     category: 'Webbapplikation',
-    img: '/images/crud.jpg',
+    img: '/images/weather-app-2.png',
     ProjectHeader: {
-      title: 'CRUD Application',
-      publishDate: 'Juli 26, 2022',
+      title: 'Weather Forecast',
+      publishDate: 'Dec 20, 2023',
       tags: 'Webbapplikation'
     },
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'crud',
-        img: '/images/crud-login.png'
+        title: 'weather-app-1',
+        img: '/images/weather-app-1.png'
       },
       {
         id: uuidv4(),
-        title: 'crud',
-        img: '/images/crud-showSnippets.png'
+        title: 'weather-app-3',
+        img: '/images/weather-app-3.png'
       },
       {
         id: uuidv4(),
-        title: 'crud',
-        img: '/images/crud-home.png'
+        title: 'weather-app-4',
+        img: '/images/weather-app-4.png'
       }
     ],
     ProjectInfo: {
@@ -122,27 +122,26 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Typ av applikation: ',
-          details: 'Backend & Frontend Development'
+          details: 'Webbapplikation'
         },
         {
           id: uuidv4(),
           title: 'Klicka här för att komma till hemsidan',
-          details: 'https://crud.dongzhutan.com/',
+          details: 'https://weatherforecast.dongzhutan.com',
           isLink: true
         }
       ],
-     
+      
       Technologies: [
         {
           title: 'Verktyg och teknik',
           techs: [
-            'JavaScript',
+            'React.js',
+            'Javascript',
             'Node.js',
             'Express',
-            'MongoDB',
-            'Git',
-            'Html',
-            'CSS'
+            'ESLint',
+            'API',
           ]
         }
       ],
@@ -151,13 +150,8 @@ export const projectsData = [
         {
           id: uuidv4(),
           details:
-						'"Our Snippets" är en webbapplikation som tillåter användare att skapa ett konto, registrera sig, logga in och hantera sina kodsnuttar. De viktigaste funktionerna inkluderar att skapa, läsa, uppdatera och ta bort (CRUD) utdrag. Användaren kan även se utdrag som skapats av andra, men för att skapa sina egna måste de logga in. Dessutom kan användare bara ändra eller ta bort sina egna utdrag, vilket säkerställer dataintegritet och användarspecifik innehållshantering. Efter att användaren utfört en inloggning visas en "Logga ut"-knapp. Genom att klicka på den här knappen loggas användaren ut och återgår till startsidan.'
-        },
-        {
-          id: uuidv4(),
-          details:
-						'I det här projektet har jag lärt mig grunderna i att bygga en CRUD-applikation, vilket har givit mig en djupare praktisk erfarenhet av full-stack-utveckling.'
-        },
+						'Välkommen till Väderprognosapplikationen! Detta användarvänliga verktyg låter dig få en omfattande 40-dagars väderprognos för vilken stad som helst över hela världen. Genom att utnyttja data från OpenWeatherMap API bearbetar och presenterar vår applikation genomsnittliga väderförhållanden i ett intuitivt och visuellt tilltalande gränssnitt.'
+        }
       ]
     }
   },
@@ -175,17 +169,17 @@ export const projectsData = [
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'Kabul Project Management UI',
+        title: 'cleaning-company-1',
         img: '/images/cleaning-company-1.jpg'
       },
       {
         id: uuidv4(),
-        title: 'Kabul Project Management UI',
+        title: 'cleaning-company-2',
         img: '/images/cleaning-company-2.jpg'
       },
       {
         id: uuidv4(),
-        title: 'Kabul Project Management UI',
+        title: 'cleaning-company-3',
         img: '/images/cleaning-company-3.jpg'
       }
     ],
@@ -253,17 +247,17 @@ export const projectsData = [
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'Kabul Project Management UI',
+        title: 'grafik99-after',
         img: '/images/grafik99-after.png'
       },
       {
         id: uuidv4(),
-        title: 'Kabul Project Management UI',
+        title: 'grafik99-logo',
         img: '/images/grafik99-logo.jpg'
       },
       {
         id: uuidv4(),
-        title: 'Kabul Project Management UI',
+        title: 'grafik99-before',
         img: '/images/grafik99-before.png'
       }
     ],
@@ -303,6 +297,84 @@ export const projectsData = [
           details:
 						'Projektet fokuserade på att göra om den nuvarande föreningens hemsida till en mer modern utseende. Jag och min partner valde som ett första steg i process att titta på den nuvarande webbplatsen för att bestämma vad som kan behållas och vad som måste göras om. Vidare diskuterades vi den nuvarande strukturen och de önskemål som föreningen la fram. Avslutningssvis utfördes arbetet i Wordpress som den äldre versionen var utformad i, ett hinder i arbetet var hur föreingen skall kunna sköta föreningens webbsida själva och därefter föll valet i att behålla snarlik struktur och därav föll valet på behållandet av att använda sig utav wordpress, Slutligen så ändrades temat till ett ljusare och textfonterna till ett som var mer överskådligt och lättläst.'
         }
+      ]
+    }
+  },
+  {
+    id: 5,
+    title: 'CRUD Applikation',
+    url: 'https://crud.dongzhutan.com/',
+    category: 'Webbapplikation',
+    img: '/images/crud.jpg',
+    ProjectHeader: {
+      title: 'CRUD Application',
+      publishDate: 'Juli 26, 2022',
+      tags: 'Webbapplikation'
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: 'crud-login',
+        img: '/images/crud-login.png'
+      },
+      {
+        id: uuidv4(),
+        title: 'crud-showSnippets',
+        img: '/images/crud-showSnippets.png'
+      },
+      {
+        id: uuidv4(),
+        title: 'crud-home',
+        img: '/images/crud-home.png'
+      }
+    ],
+    ProjectInfo: {
+      ClientHeading: 'Om klienten',
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: 'Namn: ',
+          details: 'Dongzhu Tan'
+        },
+        {
+          id: uuidv4(),
+          title: 'Typ av applikation: ',
+          details: 'Backend & Frontend Development'
+        },
+        {
+          id: uuidv4(),
+          title: 'Klicka här för att komma till hemsidan',
+          details: 'https://crud.dongzhutan.com/',
+          isLink: true
+        }
+      ],
+     
+      Technologies: [
+        {
+          title: 'Verktyg och teknik',
+          techs: [
+            'JavaScript',
+            'Node.js',
+            'Express',
+            'MongoDB',
+            'Git',
+            'Html',
+            'CSS'
+          ]
+        }
+      ],
+      ProjectDetailsHeading: 'Översikt',
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+						'"Our Snippets" är en webbapplikation som tillåter användare att skapa ett konto, registrera sig, logga in och hantera sina kodsnuttar. De viktigaste funktionerna inkluderar att skapa, läsa, uppdatera och ta bort (CRUD) utdrag. Användaren kan även se utdrag som skapats av andra, men för att skapa sina egna måste de logga in. Dessutom kan användare bara ändra eller ta bort sina egna utdrag, vilket säkerställer dataintegritet och användarspecifik innehållshantering. Efter att användaren utfört en inloggning visas en "Logga ut"-knapp. Genom att klicka på den här knappen loggas användaren ut och återgår till startsidan.'
+        },
+        {
+          id: uuidv4(),
+          details:
+						'I det här projektet har jag lärt mig grunderna i att bygga en CRUD-applikation, vilket har givit mig en djupare praktisk erfarenhet av full-stack-utveckling.'
+        },
       ]
     }
   },

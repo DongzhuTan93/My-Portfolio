@@ -41,8 +41,8 @@ function ProjectSingle (props) {
 								className="rounded-xl shadow-lg sm:shadow-none w-full display: block object-fit: contain h-full object-cover"
 								alt={project.title}
 								key={project.id}
-								width={500}
-								height={500}
+								width={600}
+								height={600}
 							/>
 						</div>
 				  )
