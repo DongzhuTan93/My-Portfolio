@@ -9,7 +9,7 @@ const socialLinks = [
   {
     id: 4,
     icon: <FiLinkedin />,
-    url: 'https://www.linkedin.com/in/dongzhu-tan-891b13241/'
+    url: 'https://www.linkedin.com/in/dong-tan-891b13241/'
   }
 ] // I got inspiration here: https://react-icons.github.io/react-icons/search/#q=faceBook
 
