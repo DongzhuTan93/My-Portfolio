@@ -243,3 +243,46 @@ a {
     opacity: 0.5;
   }
 }
+
+.developer-image {
+  max-height: 450px;
+  object-fit: cover;
+  backdrop-filter: blur(2px);
+  transition: transform 0.3s ease;
+  filter: contrast(105%);
+}
+
+.developer-image:hover {
+  transform: scale(1.02);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid .project-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  height: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.grid .project-card .content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.grid .project-card:hover img {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}

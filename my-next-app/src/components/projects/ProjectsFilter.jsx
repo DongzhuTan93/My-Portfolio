@@ -1,33 +1,29 @@
+import { useState } from 'react'
+
 const selectOptions = [
   'Webbapplikation',
-  'UI Design'
+  'Webbsida'
 ]
 
 
 function ProjectsFilter ({ setSelectProject }) {
+  const [selectValue, setSelectValue] = useState('')
+
   return (
 		<select
 			onChange={(e) => {
 			  setSelectProject(e.target.value)
+			  setSelectValue(e.target.value)
 			}}
-			className="
-                px-4
-                sm:px-6
-                py-2
-                border
-                rounded-lg
-                text-sm
-                sm:text-xl
-                bg-secondary-light
-                text-primary-dark
-            "
+			className="font-general-regular text-secondary-dark text-xl sm:text-xl px-4 py-2 border-1 border-gray-200 rounded-lg"
+			value={selectValue}
 		>
-			<option value="" className="text-sm sm:text-xl">
+			<option value="" className="font-general-regular text-center text-secondary-dark text-xl sm:text-xl mb-3">
         Alla projekt
 			</option> 
 
 			{selectOptions.map((option) => (
-				<option value ={option} className="text-normal sm:text-xl" key={option}>
+				<option value={option} className="font-general-regular text-center text-secondary-dark text-xl sm:text-xl mb-3" key={option}>
 					{option}
 				</option>
 			))}

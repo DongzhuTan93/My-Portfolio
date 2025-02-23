@@ -19,10 +19,10 @@ function AboutMeBio () {
         backgroundPosition: 'center',
       }}
     >
-      <div className="bg-white bg-opacity-90 mx-auto max-w-6xl p-8 rounded-lg mb-40">
-        <div className="flex flex-col lg:flex-row items-start gap-10">
+      <div className="bg-white bg-opacity-90 mx-auto max-w-6xl p-8 rounded-lg mb-20">
+        <div className="flex flex-col lg:flex-row items-center gap-10">
           <motion.div 
-            className="w-full lg:w-2/2 mb-7 lg:mb-0"
+            className="w-full lg:w-1/3 mb-7 lg:mb-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.4 }}
@@ -40,27 +40,24 @@ function AboutMeBio () {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.6 }}
-            className="w-full lg:w-2/2"
+            className="w-full lg:w-2/3"
           >
             <motion.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-left ml-10 uppercase mb-4 ml-10"
+              className="font-general-regular text-2xl font-semibold text-secondary-dark mb-8"
             >
               Hej!
             </motion.h1>
            
             {aboutMe.map((bio) => (
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 1 }}
-                className="font-general-regular text-justify text-3xl sm:text-xl mb-3 ml-10"
+              <p
                 key={bio.id}
+                className="font-general-regular ml-2 leading-normal text-primary-dark mb-8"
               >
                 {bio.bio}
-              </motion.p>
+              </p>
             ))}
           </motion.div>
         </div>

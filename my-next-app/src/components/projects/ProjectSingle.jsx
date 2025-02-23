@@ -22,23 +22,30 @@ const ProjectSingle = (props) => {
 				aria-label="Single Project"
 				passHref
 			>
-				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light h-full">
-					<div className='h-96 object-cover'>
+				<div style={{ 
+					height: '385px',
+					background: 'white',
+					borderRadius: '8px',
+					overflow: 'hidden',
+					boxShadow: '0 8px 12px rgba(0, 0, 0, 0.1)',
+					display: 'flex',
+					flexDirection: 'column'
+				}}>
+					<div style={{ height: '380px', position: 'relative' }}>
 						<Image
 							src={props.img}
-							className="rounded-t-xl border-none w-full display: block object-fit: contain h-full object-cover"
-							alt="Single Project"	
-							width={320}
-							height={320}
+							alt={props.title}
+							layout="fill"
+							objectFit="cover"
 						/>
 					</div>
-					<div className="text-center px-4 py-6 bg-white">
-						<p className="font-general-medium text-xl md:text-2xl text-ternary-dark mb-2">
-							{props.title}
-						</p>
-						<span className="text-lg text-ternary-dark ">
-							{props.category}
-						</span>
+					<div style={{ 
+						padding: '2rem',
+						textAlign: 'center',
+						background: 'white'
+					}}>
+						<h3 className="font-general-medium text-2xl text-ternary-dark">{props.title}</h3>
+						<p className="text-gray-500 text-sm mt-2">{props.category}</p>
 					</div>
 				</div>
 			</Link>

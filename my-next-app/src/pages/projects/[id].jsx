@@ -54,67 +54,67 @@ function ProjectSingle (props) {
 				<div className="w-full sm:w-1/3 text-left">
 					{/* Single project client details */}
 					<div className="mb-7">
-						<p className="font-general-regular text-2xl font-semibold text-secondary-dark  mb-2">
+						<p className="font-general-regular text-2xl font-semibold text-secondary-dark mb-2">
 							{props.project.ProjectInfo.ClientHeading}
 						</p>
-						<ul className="leading-loose text-xl">
+						<ul className="leading-loose">
 							{props.project.ProjectInfo.CompanyInfo.map(
-							  (info) => {
+								(info) => {
 								if (info.isLink) {
 									return (
-											<li
-												className="font-general-regular text-ternary-dark  text-xl"
-												key={info.id}
+										<li
+											className="font-general-regular text-ternary-dark"
+											key={info.id}
+										>
+											<span className="font-general-regular ml-2 leading-none text-primary-dark">{info.title}: </span>
+											<a
+												href={info.details}
+												className={
+													info.title === 'Klicka här för att komma till hemsidan' ||
+													info.title === 'Phone'
+														? 'hover:underline hover:text-indigo-500 text-orange-600 font-semibold cursor-pointer duration-300'
+														: ''
+												}
+												aria-label="Project Website and Phone"
 											>
-												<span>{info.title}: </span>
-												<a
-													href={info.details}
-													className={
-														info.title === 'Klicka här för att komma till hemsidan' ||
-														info.title === 'Phone'
-														  ? 'hover:underline hover:text-indigo-500 text-orange-600 font-semibold cursor-pointer text-xl duration-300'
-														  : ''
-													}
-													aria-label="Project Website and Phone"
-												>
-													{info.details}
-												</a>
-											</li>
+												{info.details}
+											</a>
+										</li>
 									)
 								} else {
 									return (
 										<li
-											className="font-general-regular text-ternary-dark  text-xl"
+											className="font-general-regular text-ternary-dark"
 											key={info.id}
 										>
-											<span>{info.title}</span>
-												{info.details}
+											<span className="font-general-regular ml-2 leading-none text-primary-dark">{info.title}</span>
+											{info.details}
 										</li>
-							    )
+									)
 								}
-							  }
+								}
 							)}
 						</ul>
 					</div>
 
 					{/* Single project objectives */}
 					<div className="mb-7">
-						<p className="font-general-regular text-2xl font-semibold text-ternary-dark mb-2">
+						<p className="font-general-regular text-2xl font-semibold text-ternary-dark mb-8">
 							{props.project.ProjectInfo.ObjectivesHeading}
 						</p>
-						<p className="font-general-regular text-primary-dark ">
+						<p className="font-general-regular text-lg ml-2 leading-normal text-primary-dark mb-8">
 							{props.project.ProjectInfo.ObjectivesDetails}
 						</p>
 					</div>
 
 					{/* Single project technologies */}
 					<div className="mb-7">
-						<p className="font-general-regular text-2xl font-semibold text-ternary-dark mb-2">
+						<p className="font-general-regular text-2xl font-semibold text-primary-dark mb-2">
 							{props.project.ProjectInfo.Technologies[0].title}
 						</p>
-						<p className="font-general-regular text-primary-dark text-xl">
+						<p className="font-general-regular ml-2 leading-none text-primary-dark">
 							{props.project.ProjectInfo.Technologies[0].techs.join(
-							  ', '
+								', '
 							)}
 						</p>
 					</div>
@@ -129,18 +129,18 @@ function ProjectSingle (props) {
 
 				{/*  Single project right section details */}
 				<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-					<p className="text-primary-dark  text-3xl font-bold mb-7">
+					<p className="font-general-regular text-2xl font-semibold text-secondary-dark mb-2">
 						{props.project.ProjectInfo.ProjectDetailsHeading}
 					</p>
 					{props.project.ProjectInfo.ProjectDetails.map((details) => {
-					  return (
+						return (
 							<p
 								key={details.id}
-								className="font-general-regular mb-5 text-lg text-ternary-dark text-xl"
+								className="font-general-regular ml-2 leading-none text-primary-dark mb-5"
 							>
 								{details.details}
 							</p>
-					  )
+						)
 					})}
 				</div>
 			</div>

@@ -4,6 +4,82 @@ import { v4 as uuidv4 } from 'uuid'
 export const projectsData = [
   {
     id: 1,
+    title: 'Bossa Care',
+    url: 'https://bossacare.se/',
+    category: 'Webbsida',
+    img: '/images/bossa care home page.png',
+    ProjectHeader: {
+      title: 'Bossa Care',
+      publishDate: 'Januari 15, 2024',
+      tags: 'Webbsida'
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: 'bossa-care-home',
+        img: '/images/bossa care 1.png'
+      },
+      {
+        id: uuidv4(),
+        title: 'bossa-care-hand',
+        img: '/images/bossa care hand.png'
+      },
+      {
+        id: uuidv4(),
+        title: 'bossa-care-massage',
+        img: '/images/bossa care 2.png'
+      },
+    ],
+    ProjectInfo: {
+      ClientHeading: 'Om klienten',
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: 'Namn: ',
+          details: 'Bossa Care Of Sweden AB'
+        },
+        {
+          id: uuidv4(),
+          title: 'Typ av applikation: ',
+          details: 'Webbsida'
+        },
+        {
+          id: uuidv4(),
+          title: 'Klicka här för att komma till hemsidan:',
+          details: 'https://bossacare.se/',
+          isLink: true
+        }
+      ],
+      Technologies: [
+        {
+          title: 'Verktyg och teknik',
+          techs: [
+            'Typescript',
+            'Next.js',
+            'Tailwind CSS',
+            'Responsive Design'
+          ]
+        }
+      ],
+      ProjectDetailsHeading: 'Översikt',
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details: 'En modern och responsiv webbsida för Bossa Care som presenterar deras tjänster och verksamhet. Jag var involverad i hela utvecklingsprocessen, från de första kundmötena där jag lyssnade på och analyserade kundens behov och önskemål.'
+        },
+        {
+          id: uuidv4(),
+          details: 'Efter att ha samlat in kraven skapade jag designprototyper i Figma, vilket möjliggjorde en tydlig visuell kommunikation med kunden och säkerställde att designen mötte deras förväntningar innan utvecklingen påbörjades.'
+        },
+        {
+          id: uuidv4(),
+          details: 'För implementeringen valde jag att använda Next.js för dess fördelar inom prestanda och SEO, kombinerat med Tailwind CSS för att skapa ett modernt och responsivt gränssnitt. Detta tekniska val resulterade i en snabb, användarvänlig och visuellt tilltalande webbplats som effektivt presenterar Bossa Cares tjänster.'
+        }
+      ]
+    }
+  },
+  {
+    id: 2,
     title: 'Hitta vikarie',
     url: 'https://hittavikarie.dongzhutan.com/',
     category: 'Webbapplikation',
@@ -84,9 +160,9 @@ export const projectsData = [
     }
   },
   {
-    id: 2,
+    id: 3,
     title: 'Weather Forecast',
-    url: 'https://grafik99.com/',
+    url: 'https://weatherforecast.dongzhutan.com/',
     category: 'Webbapplikation',
     img: '/images/weather-app-2.png',
     ProjectHeader: {
@@ -151,151 +227,6 @@ export const projectsData = [
           id: uuidv4(),
           details:
 						'Välkommen till Väderprognosapplikationen! Detta användarvänliga verktyg låter dig få en omfattande 40-dagars väderprognos för vilken stad som helst över hela världen. Genom att utnyttja data från OpenWeatherMap API bearbetar och presenterar vår applikation genomsnittliga väderförhållanden i ett intuitivt och visuellt tilltalande gränssnitt.'
-        }
-      ]
-    }
-  },
-  {
-    id: 3,
-    title: 'Städföretag',
-    url: 'https://cleaningcompany.dongzhutan.com/',
-    category: 'UI Design',
-    img: '/images/cleaning-company.jpg',
-    ProjectHeader: {
-      title: 'Dong städ',
-      publishDate: 'Mars 26, 2021',
-      tags: 'UI / Frontend'
-    },
-    ProjectImages: [
-      {
-        id: uuidv4(),
-        title: 'cleaning-company-1',
-        img: '/images/cleaning-company-1.jpg'
-      },
-      {
-        id: uuidv4(),
-        title: 'cleaning-company-2',
-        img: '/images/cleaning-company-2.jpg'
-      },
-      {
-        id: uuidv4(),
-        title: 'cleaning-company-3',
-        img: '/images/cleaning-company-3.jpg'
-      }
-    ],
-    ProjectInfo: {
-      ClientHeading: 'Om klienten',
-      CompanyInfo: [
-        {
-          id: uuidv4(),
-          title: 'Namn: ',
-          details: 'Dongzhu Tan'
-        },
-        {
-          id: uuidv4(),
-          title: 'Typ av applikation: ',
-          details: 'UI Design'
-        },
-        {
-          id: uuidv4(),
-          title: 'Klicka här för att komma till hemsidan',
-          details: 'https://cleaningcompany.dongzhutan.com/',
-          isLink: true
-        }
-      ],
-      
-      Technologies: [
-        {
-          title: 'Verktyg och teknik',
-          techs: [
-            'HTML',
-            'CSS',
-          ]
-        }
-      ],
-      ProjectDetailsHeading: 'Översikt',
-      ProjectDetails: [
-        {
-          id: uuidv4(),
-          details:
-						'"Dong städ" är en simulering av ett städföretags hemsida, Detta projekt skapades som en del av en presentationsuppgift under mina studier. Webbplatsen låter kunderna utforska olika städtjänster och deras tillhörande priser. Utöver tjänster och priser så innehåller hemsidan även ett kontaktformulär från vilket kunderna kan nå ut till företaget direkt.'
-        },
-        {
-          id: uuidv4(),
-          details:
-						'Detta var den första webbplatsen jag byggde med HTML och CSS under mitt första år på Linnéuniversitetet. Som följd av projektet upptäckte jag min passion för front-end webbdesign och utveckling av användargränssnitt. Hemsidan visar upp min första satsning på interaktionsdesign, samtidigt som den visar min egna förmåga i att skapa intuitiva och visuellt tilltalande webbsidor.'
-        },
-        {
-          id: uuidv4(),
-          details:
-						'Genom att besöka Dong städ, kan du se mina första steg i världen till målet som fullstackutvecklare. Det visar mitt tidiga arbete inom webbutveckling och mina grundläggande färdigheter inom UI-design. Detta projekt lade grunden för min fortsatta tillväxt och intresse för området webbutveckling.'
-        },
-      ]
-    }
-  },
-  {
-    id: 4,
-    title: 'Grafik99/Bildverket',
-    url: 'https://grafik99.com/',
-    category: 'UI Design',
-    img: '/images/grafik99.png',
-    ProjectHeader: {
-      title: 'Grafik99/Bildverket',
-      publishDate: 'Maj 26, 2024',
-      tags: 'UI / Frontend'
-    },
-    ProjectImages: [
-      {
-        id: uuidv4(),
-        title: 'grafik99-after',
-        img: '/images/grafik99-after.png'
-      },
-      {
-        id: uuidv4(),
-        title: 'grafik99-logo',
-        img: '/images/grafik99-logo.jpg'
-      },
-      {
-        id: uuidv4(),
-        title: 'grafik99-before',
-        img: '/images/grafik99-before.png'
-      }
-    ],
-    ProjectInfo: {
-      ClientHeading: 'Om klienten',
-      CompanyInfo: [
-        {
-          id: uuidv4(),
-          title: 'Namn: ',
-          details: 'Grafik99/Bildverket'
-        },
-        {
-          id: uuidv4(),
-          title: 'Typ av applikation: ',
-          details: 'UI Design'
-        },
-        {
-          id: uuidv4(),
-          title: 'Klicka här för att komma till hemsidan',
-          details: 'https://grafik99.com/',
-          isLink: true
-        }
-      ],
-      
-      Technologies: [
-        {
-          title: 'Verktyg och teknik',
-          techs: [
-            'WordPress',
-          ]
-        }
-      ],
-      ProjectDetailsHeading: 'Översikt',
-      ProjectDetails: [
-        {
-          id: uuidv4(),
-          details:
-						'Projektet fokuserade på att göra om den nuvarande föreningens hemsida till en mer modern utseende. Jag och min partner valde som ett första steg i process att titta på den nuvarande webbplatsen för att bestämma vad som kan behållas och vad som måste göras om. Vidare diskuterades vi den nuvarande strukturen och de önskemål som föreningen la fram. Avslutningssvis utfördes arbetet i Wordpress som den äldre versionen var utformad i, ett hinder i arbetet var hur föreingen skall kunna sköta föreningens webbsida själva och därefter föll valet i att behålla snarlik struktur och därav föll valet på behållandet av att använda sig utav wordpress, Slutligen så ändrades temat till ett ljusare och textfonterna till ett som var mer överskådligt och lättläst.'
         }
       ]
     }
@@ -378,4 +309,5 @@ export const projectsData = [
       ]
     }
   },
+  
 ]
