@@ -59,8 +59,8 @@ function HireMeModal ({onClose}) {
             <main className="flex flex-col items-center justify-center h-full w-full">
                 <div className="modal-wrapper flex items-center z-30">
                     <div className="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-gray-50 shadow-lg flex-row rounded-lg relative">
-                        <div className="modal-header flex justify-between p-5 border-b border-gray-300">
-                            <h5 className="block text-left text-3xl sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0">
+                        <div className="modal-header flex justify-between px-6 py-5 border-b border-gray-300">
+                            <h5 className="block text-left text-3xl">
                                 Hålla kontakten!
                             </h5>
                             <button

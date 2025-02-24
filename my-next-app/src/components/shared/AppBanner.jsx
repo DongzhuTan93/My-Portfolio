@@ -7,7 +7,7 @@ import backgroundImage from '../../../public/images/background.png'
 
 function AppBanner () {
   return (
-    <div className="relative h-[600px] sm:h-[700px] overflow-hidden">
+    <div className="relative h-[800px] sm:h-[500px] overflow-hidden">
       <Image
         src={backgroundImage}
         alt="Background"
@@ -27,7 +27,7 @@ function AppBanner () {
         transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
         className="relative z-10 container mx-auto flex flex-col sm:flex-row items-center h-full py-5 sm:py-10 px-5 sm:px-10"
       >
-        <div className="w-full md:w-3/4 text-left mr-10 sm:mb-0 pl-10">
+        <div className="w-full md:w-1/2 text-left">
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -36,7 +36,7 @@ function AppBanner () {
               duration: 0.9,
               delay: 0.1
             }}
-            className="font-general-semibold text-4xl lg:text-3xl xl:text-4xl text-center sm:text-left uppercase tracking-wider"
+            className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left uppercase tracking-wider"
           >
             Hej, jag heter Dong
           </motion.h1>
@@ -51,7 +51,7 @@ function AppBanner () {
             className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-relaxed text-gray-600 tracking-wide"
           >
             Full-Stack utvecklare med passion för frontend utveckling och moderna tekniker
-            <span className="block font-general-regular mt-2 text-gray-500 text-base md:text-lg lg:text-xl font-bold mt-8">
+            <span className="block font-general-light mt-2 text-gray-500 text-base md:text-lg lg:text-xl font-bold mt-8">
               Där kodning möter användarvänlig design
             </span>
           </motion.p>
@@ -82,17 +82,15 @@ function AppBanner () {
           initial={{ opacity: 0, y: -180 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-          className="w-full sm:w-3/5 text-center sm:text-right mr-15 ml-10"
+          className="w-full md:w-1/2 mt-8 sm:mt-0 flex items-center justify-center"
         >
           <Image
             src={DevelopImage}
             alt="Developer"
-            width={500}
-            height={500}
-            className="developer-image w-full sm:w-auto max-w-full h-auto rounded-lg shadow-lg"
-            style={{
-              objectFit: 'cover',
-            }}
+            width={400}
+            height={400}
+            className="w-full max-w-sm h-auto rounded-lg shadow-lg developer-image"
+            priority
           />
         </motion.div>
       </motion.section>

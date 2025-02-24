@@ -20,7 +20,7 @@ function AppFooter () {
 			<div className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light">
 				{/* Footer social links */}
 				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
-					<p className="block text-left text-2xl sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0">
+					<p className="text-2xl mb-2 sm:py-2">
 						Följ mig
 					</p>
 					<ul className="flex gap-4 sm:gap-8">

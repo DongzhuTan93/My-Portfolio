@@ -1,30 +1,31 @@
 import Image from 'next/image'
-import { FiClock, FiTag } from 'react-icons/fi'
+import { FiClock, FiTag, FiArrowLeft } from 'react-icons/fi'
 import PagesMetaHead from '../../components/PagesMetaHead'
 import { projectsData } from '../../data/projectsData'
+import Link from 'next/link'
 
 
 
 function ProjectSingle (props) {
   return (
-		<div className="container mx-auto">
+		<div className="container mx-auto px-4 sm:px-0">
 			<PagesMetaHead title={props.project.title} />
 
 			{/* Header */}
-			<div>
-				<p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark mt-14 sm:mt-20 mb-7 text-orange-600">
+			<div className="text-center sm:text-left">
+				<p className="font-general-medium text-3xl sm:text-4xl font-bold text-primary-dark mt-14 sm:mt-20 mb-7 text-orange-600">
 					{props.project.ProjectHeader.title}
 				</p>
-				<div className="flex">
-					<div className="flex items-center mr-10">
-						<FiClock className="text-xl text-ternary-dark " />
-						<span className="font-general-regular leading-none text-primary-dark ">
+				<div className="flex justify-center sm:justify-start gap-4">
+					<div className="flex items-center">
+						<FiClock className="text-xl text-ternary-dark" />
+						<span className="font-general-regular ml-2 leading-none text-primary-dark">
 							{props.project.ProjectHeader.publishDate}
 						</span>
 					</div>
 					<div className="flex items-center">
-						<FiTag className="w-4 h-4 text-ternary-dark " />
-						<span className="font-general-regular leading-none text-primary-dark ">
+						<FiTag className="w-4 h-4 text-ternary-dark" />
+						<span className="font-general-regular ml-2 leading-none text-primary-dark">
 							{props.project.ProjectHeader.tags}
 						</span>
 					</div>
@@ -51,7 +52,7 @@ function ProjectSingle (props) {
 
 			{/* Info */}
 			<div className="block sm:flex gap-0 sm:gap-10 mt-14">
-				<div className="w-full sm:w-1/3 text-left">
+				<div className="w-full sm:w-1/3 text-left px-4 sm:px-0">
 					{/* Single project client details */}
 					<div className="mb-7">
 						<p className="font-general-regular text-2xl font-semibold text-secondary-dark mb-2">
@@ -112,11 +113,18 @@ function ProjectSingle (props) {
 						<p className="font-general-regular text-2xl font-semibold text-primary-dark mb-2">
 							{props.project.ProjectInfo.Technologies[0].title}
 						</p>
-						<p className="font-general-regular leading-none text-primary-dark">
-							{props.project.ProjectInfo.Technologies[0].techs.join(
-								', '
-							)}
-						</p>
+						<div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+							{props.project.ProjectInfo.Technologies[0].techs.map((skill, index) => (
+								<div
+									key={index}
+									className="bg-white shadow-md rounded-lg p-4 text-center"
+								>
+									<p className="text-base sm:text-lg font-medium text-gray-800">
+										{skill}
+									</p>
+								</div>
+							))}
+						</div>
 					</div>
 
 					{/* Single project social sharing */}
@@ -128,7 +136,7 @@ function ProjectSingle (props) {
 				</div>
 
 				{/*  Single project right section details */}
-				<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
+				<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0 px-4 sm:px-0">
 					<div className="mb-7">
 						<p className="font-general-regular text-2xl font-semibold text-ternary-dark mb-8">
 							{props.project.ProjectInfo.ProjectDetailsHeading}
@@ -143,6 +151,17 @@ function ProjectSingle (props) {
 						))}
 					</div>
 				</div>
+			</div>
+
+			{/* Add this at the end of your content, after all project details */}
+			<div className="flex justify-center mt-10 mb-8 px-4">
+				<Link 
+					href="/projects"
+					className="flex items-center justify-center gap-2 bg-indigo-500 hover:bg-indigo-600 text-white py-3 px-6 rounded-lg shadow-lg transition duration-300"
+				>
+					<FiArrowLeft size={24} />
+					<span className="text-lg">Tillbaka till projekt</span>
+				</Link>
 			</div>
 		</div>
   )

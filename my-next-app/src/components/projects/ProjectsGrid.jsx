@@ -20,29 +20,27 @@ function ProjectsGrid () {
   })
 
   return (
-	<section className="py-5 sm:py-10 mt-5 sm:mt-10 mb-10 px-5 sm:px-10 bg-zinc-100">
-			<div className="text-center px-4 sm:px-6">
-				<p className="font-general-medium text-4xl sm:text-4xl mr-10 text-ternary-dark font-bold">
+	<section className="py-5 sm:py-10 mt-5 sm:mt-10">
+			<div className="text-center">
+				<h1 className="font-general-medium text-4xl sm:text-5xl mb-1">
 					Mina Projekt
+				</h1>
+				<p className="font-general-light text-lg sm:text-xl mt-4 mb-8">
+					Välj din favoritkategori och upptäck mer!
 				</p>
 			</div>
 
-			<div className="mt-4 sm:mt-8 px-4 sm:px-6">
-				<h3 className="font-general-regular text-center text-secondary-dark text-xl sm:text-xl mb-3">
-					Välj din favoritkategori och upptäck mer!
-				</h3>
+			<div className="mt-10 sm:mt-16">
 				<div
 					className="
                         flex
                         justify-between
                         border-b border-primary-light
                         pb-3
-                        gap-3
-                        "
+                        gap-20
+                        px-4 sm:px-6
+                    "
 				>
-					<div className="flex justify-between gap-2">
-				
-					</div>
 					<ProjectsFilter setSelectProject={setSelectProject} />
 				</div>
 			</div>
