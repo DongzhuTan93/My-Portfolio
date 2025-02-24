@@ -18,13 +18,13 @@ function ProjectSingle (props) {
 				<div className="flex">
 					<div className="flex items-center mr-10">
 						<FiClock className="text-xl text-ternary-dark " />
-						<span className="font-general-regular ml-2 leading-none text-primary-dark ">
+						<span className="font-general-regular leading-none text-primary-dark ">
 							{props.project.ProjectHeader.publishDate}
 						</span>
 					</div>
 					<div className="flex items-center">
 						<FiTag className="w-4 h-4 text-ternary-dark " />
-						<span className="font-general-regular ml-2 leading-none text-primary-dark ">
+						<span className="font-general-regular leading-none text-primary-dark ">
 							{props.project.ProjectHeader.tags}
 						</span>
 					</div>
@@ -66,13 +66,13 @@ function ProjectSingle (props) {
 											className="font-general-regular text-ternary-dark"
 											key={info.id}
 										>
-											<span className="font-general-regular ml-2 leading-none text-primary-dark">{info.title}: </span>
+											<span className="font-general-regular leading-none text-primary-dark">{info.title}: </span>
 											<a
 												href={info.details}
 												className={
 													info.title === 'Klicka här för att komma till hemsidan' ||
 													info.title === 'Phone'
-														? 'hover:underline hover:text-indigo-500 text-orange-600 font-semibold cursor-pointer duration-300'
+														? 'hover:underline hover:text-indigo-500 text-orange-600 font-semibold text-lg cursor-pointer duration-300'
 														: ''
 												}
 												aria-label="Project Website and Phone"
@@ -87,7 +87,7 @@ function ProjectSingle (props) {
 											className="font-general-regular text-ternary-dark"
 											key={info.id}
 										>
-											<span className="font-general-regular ml-2 leading-none text-primary-dark">{info.title}</span>
+											<span className="font-general-regular leading-none text-primary-dark">{info.title}</span>
 											{info.details}
 										</li>
 									)
@@ -102,7 +102,7 @@ function ProjectSingle (props) {
 						<p className="font-general-regular text-2xl font-semibold text-ternary-dark mb-8">
 							{props.project.ProjectInfo.ObjectivesHeading}
 						</p>
-						<p className="font-general-regular text-lg ml-2 leading-normal text-primary-dark mb-8">
+						<p className="font-general-regular text-lg leading-normal text-primary-dark mb-8">
 							{props.project.ProjectInfo.ObjectivesDetails}
 						</p>
 					</div>
@@ -112,7 +112,7 @@ function ProjectSingle (props) {
 						<p className="font-general-regular text-2xl font-semibold text-primary-dark mb-2">
 							{props.project.ProjectInfo.Technologies[0].title}
 						</p>
-						<p className="font-general-regular ml-2 leading-none text-primary-dark">
+						<p className="font-general-regular leading-none text-primary-dark">
 							{props.project.ProjectInfo.Technologies[0].techs.join(
 								', '
 							)}
@@ -121,7 +121,7 @@ function ProjectSingle (props) {
 
 					{/* Single project social sharing */}
 					<div>
-						<p className="font-general-regular text-2xl font-semibold text-ternary-dark mb-2">
+						<p className="font-general-regular text-lg font-semibold text-ternary-dark mb-2">
 							{props.project.ProjectInfo.SocialSharingHeading}
 						</p>
 					</div>
@@ -129,19 +129,19 @@ function ProjectSingle (props) {
 
 				{/*  Single project right section details */}
 				<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
-					<p className="font-general-regular text-2xl font-semibold text-secondary-dark mb-2">
-						{props.project.ProjectInfo.ProjectDetailsHeading}
-					</p>
-					{props.project.ProjectInfo.ProjectDetails.map((details) => {
-						return (
-							<p
-								key={details.id}
-								className="font-general-regular ml-2 leading-none text-primary-dark mb-5"
+					<div className="mb-7">
+						<p className="font-general-regular text-2xl font-semibold text-ternary-dark mb-8">
+							{props.project.ProjectInfo.ProjectDetailsHeading}
+						</p>
+						{props.project.ProjectInfo.ProjectDetails.map((details) => (
+							<p 
+								key={details.id} 
+								className="font-general-regular text-base leading-normal text-primary-dark mb-8 whitespace-pre-wrap"
 							>
 								{details.details}
 							</p>
-						)
-					})}
+						))}
+					</div>
 				</div>
 			</div>
 		</div>

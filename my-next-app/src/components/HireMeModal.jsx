@@ -70,51 +70,40 @@ function HireMeModal ({onClose}) {
                                 <FiX className="text-3xl" />
                             </button>
                         </div>
-                        <div className="modal-body p-5 w-full h-full bg-white">
-                            <form
-                                onSubmit={onSubmit}
-                                className="max-w-xl m-4 text-left"
-                            >
-                                <input
-                                    className="w-full px-5 py-2 border border-gray-300 rounded-md text-md bg-white text-gray-900"
-                                    id="name"
-                                    name="name"
-                                    type="text"
-                                    required
-                                    placeholder="Ditt namn"
-                                    aria-label="Name"
-                                />
-                                <input
-                                    className="w-full px-5 py-2 mt-6 border border-gray-300 rounded-md text-md bg-white text-gray-900"
-                                    id="email"
-                                    name="email"
-                                    type="text"
-                                    required
-                                    placeholder="E-post"
-                                    aria-label="Email"
-                                />
-                                <select
-                                    className="w-full px-5 py-2 mt-6 border border-gray-300 rounded-md text-md bg-white text-gray-900"
-                                    id="subject"
-                                    name="subject"
-                                    required
-                                    aria-label="Project Category"
-                                >
-                                    {selectOptions.map((option) => (
-                                        <option key={option}>{option}</option>
-                                    ))}
-                                </select>
-                                <textarea
-                                    className="w-full px-5 py-2 mt-6 border border-gray-300 rounded-md text-md bg-white text-gray-900"
-                                    id="message"
-                                    name="message"
-                                    cols="30"
-                                    rows="6"
-                                    placeholder="Meddelande"
-                                    aria-label="Details"
-                                ></textarea>
+                        <div className="modal-body p-5 w-full">
+                            <form className="max-w-xl m-4 text-left">
+                                <div>
+                                    <input
+                                        className="w-full px-5 py-2 border border-gray-300 rounded-md text-md bg-white text-gray-900"
+                                        id="name"
+                                        name="name"
+                                        type="text"
+                                        placeholder="Ditt namn"
+                                        aria-label="Name"
+                                    />
+                                </div>
+                                <div className="mt-6">
+                                    <input
+                                        className="w-full px-5 py-2 border border-gray-300 rounded-md text-md bg-white text-gray-900"
+                                        id="email"
+                                        name="email"
+                                        type="text"
+                                        placeholder="E-post"
+                                        aria-label="Email"
+                                    />
+                                </div>
+                                <div className="mt-6">
+                                    <textarea
+                                        className="w-full px-5 py-2 border border-gray-300 rounded-md text-md bg-white text-gray-900"
+                                        id="message"
+                                        name="message"
+                                        cols="30"
+                                        rows="6"
+                                        placeholder="Meddelande"
+                                        aria-label="Message"
+                                    ></textarea>
+                                </div>
                                 <button
-                                     
                                     className="mt-6 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-4 py-2 duration-500"
                                     type="submit"
                                 >

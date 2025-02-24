@@ -22,7 +22,7 @@ function AboutMeBio () {
       <div className="bg-white bg-opacity-90 mx-auto max-w-6xl p-8 rounded-lg mb-20">
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <motion.div 
-            className="w-full lg:w-1/3 mb-7 lg:mb-0"
+            className="w-full lg:w-1/2 mb-7 lg:mb-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.4 }}
@@ -40,7 +40,7 @@ function AboutMeBio () {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.6 }}
-            className="w-full lg:w-2/3"
+            className="w-full lg:w-1/2"
           >
             <motion.h1
               initial={{ opacity: 0 }}

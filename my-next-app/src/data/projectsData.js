@@ -45,7 +45,7 @@ export const projectsData = [
         },
         {
           id: uuidv4(),
-          title: 'Klicka här för att komma till hemsidan:',
+          title: 'Klicka här för att komma till hemsidan',
           details: 'https://bossacare.se/',
           isLink: true
         }
@@ -143,19 +143,16 @@ export const projectsData = [
       ProjectDetails: [
         {
           id: uuidv4(),
-          details:
-          '"Hitta vikarie" är en webbplats utformad med målet av att skapa en effektiv och användarvänlig kommunikationsplattform för både arbetsgivare och arbetssökande. Genom den här webbplatsen kan arbetssökande skapa ett konto, ge sina kontaktuppgifter, detaljera sin arbetserfarenhet och ange sina tillgängliga arbetstider. På samma sätt kan arbetsgivare registrera sig och få tillgång till en lista över tillgängliga arbetssökande för en viss tidsperiod. Detta gör det möjligt för arbetsgivare att effektivt granska och kontakta lämpliga kandidater.'
+          details: 'En modern webbplattform som förenklar matchningen mellan arbetsgivare och arbetssökande för deltidsjobb. Plattformen erbjuder ett effektivt system där arbetssökande kan registrera sin tillgänglighet och kompetens, medan arbetsgivare enkelt kan hitta lämpliga kandidater.'
         },
         {
           id: uuidv4(),
-          details:
-						'Det som sticker ut med "Hitta Vikarie" är dess förmåga att effektivisera anställningsprocessen. Till skillnad från traditionella jobbsökningswebbplatser som kräver att arbetsgivare sållar igenom flertalet Cv:n, så möjliggör plattformen en snabb och enkel identifiering av lämpliga deltidsanställda. Det utförs genom de avancerade filtreringsmöjligheterna. Arbetssökande, inklusive studenter, pensionärer och arbetslösa, kan använda webbplatsen gratis för att hitta deltidsjobb som motsvarar deras tillgänglighet och kompetens.'
+          details: 'Plattformen utmärker sig genom sina avancerade filtreringsmöjligheter och ett användarvänligt gränssnitt som gör det enkelt för både arbetsgivare och arbetssökande att hitta rätt matchning.'
         },
         {
           id: uuidv4(),
-          details:
-						'Detta är mitt första individuella fullstack-projekt och genom dess utveckling lärde jag mig hur man använder React för första gången. Denna erfarenhet har avsevärt förbättrat min förståelse för moderna ramverk för webbutveckling och gett mig värdefulla insikter om fullstack utveckling.'
-        },
+          details: 'Som mitt första fullstack-projekt gav utvecklingen av denna plattform mig värdefull erfarenhet av React och modern webbutveckling.'
+        }
       ]
     }
   },
