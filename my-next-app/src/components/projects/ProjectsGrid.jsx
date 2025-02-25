@@ -20,7 +20,7 @@ function ProjectsGrid () {
   })
 
   return (
-	<section className="py-5 sm:py-10 mt-5 sm:mt-10">
+	<section className="py-5 sm:py-10 mt-10 sm:mt-20">
 			<div className="text-center">
 				<h1 className="font-general-medium text-4xl sm:text-5xl mb-1">
 					Mina Projekt

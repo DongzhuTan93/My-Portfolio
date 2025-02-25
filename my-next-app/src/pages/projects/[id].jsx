@@ -110,18 +110,16 @@ function ProjectSingle (props) {
 
 					{/* Single project technologies */}
 					<div className="mb-7">
-						<p className="font-general-regular text-2xl font-semibold text-primary-dark mb-2">
+						<p className="font-general-regular text-2xl font-semibold text-secondary-dark mb-2">
 							{props.project.ProjectInfo.Technologies[0].title}
 						</p>
-						<div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+						<div className="flex flex-wrap gap-2">
 							{props.project.ProjectInfo.Technologies[0].techs.map((skill, index) => (
 								<div
 									key={index}
-									className="bg-white shadow-md rounded-lg p-4 text-center"
+									className="font-general-regular text-primary-dark"
 								>
-									<p className="text-base sm:text-lg font-medium text-gray-800">
-										{skill}
-									</p>
+									{skill}{index !== props.project.ProjectInfo.Technologies[0].techs.length - 1 && ", "}
 								</div>
 							))}
 						</div>

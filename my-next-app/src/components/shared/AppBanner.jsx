@@ -7,7 +7,7 @@ import backgroundImage from '../../../public/images/background.png'
 
 function AppBanner () {
   return (
-    <div className="relative h-[800px] sm:h-[500px] overflow-hidden">
+    <div className="relative h-[800px] sm:h-[570px] overflow-hidden">
       <Image
         src={backgroundImage}
         alt="Background"
@@ -25,7 +25,7 @@ function AppBanner () {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-        className="relative z-10 container mx-auto flex flex-col sm:flex-row items-center h-full py-5 sm:py-10 px-5 sm:px-10"
+        className="relative z-10 container mx-auto flex flex-col sm:flex-row items-center h-full py-10 sm:py-20 px-5 sm:px-10"
       >
         <div className="w-full md:w-1/2 text-left">
           <motion.h1
@@ -36,7 +36,7 @@ function AppBanner () {
               duration: 0.9,
               delay: 0.1
             }}
-            className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left uppercase tracking-wider"
+            className="font-general-semibold text-3xl lg:text-4xl xl:text-5xl text-left sm:text-left uppercase tracking-wider"
           >
             Hej, jag heter Dong
           </motion.h1>
@@ -48,10 +48,10 @@ function AppBanner () {
               duration: 0.9,
               delay: 0.2
             }}
-            className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-relaxed text-gray-600 tracking-wide"
+            className="font-general-medium mt-4 text-2xl md:text-2xl lg:text-3xl xl:text-4xl text-left leading-relaxed text-gray-600 tracking-wide"
           >
-            Full-Stack utvecklare med passion för frontend utveckling och moderna tekniker
-            <span className="block font-general-light mt-2 text-gray-500 text-base md:text-lg lg:text-xl font-bold mt-8">
+            En full-stack utvecklare med passion för frontend utveckling och moderna tekniker
+            <span className="hidden sm:block font-general-light mt-2 text-gray-500 text-xl md:text-xl lg:text-2xl font-bold mt-8 mb-6">
               Där kodning möter användarvänlig design
             </span>
           </motion.p>
@@ -68,7 +68,7 @@ function AppBanner () {
             <a
               download="CV.pdf"
               href="/files/CV.pdf"
-              className="font-general-medium flex justify-center items-center w-48 sm:w-56 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 py-3 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
+              className="font-general-medium flex justify-center items-center w-48 sm:w-56 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 py-3 sm:py-3 shadow-lg rounded-lg bg-indigo-500 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-50 text-white hover:text-gray-500 duration-500"
               aria-label="Download Resume"
             >
               <FiArrowDownCircle className="ml-0 sm:ml-1 mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-200"></FiArrowDownCircle>

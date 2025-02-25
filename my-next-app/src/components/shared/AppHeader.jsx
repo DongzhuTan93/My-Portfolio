@@ -105,7 +105,7 @@ function AppHeader() {
             <div className="hidden md:flex">
               <button
                 onClick={showHireMeModal}
-                className="text-2xl font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+                className="text-lg font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-4 py-2 duration-300"
                 aria-label="Hire Me Button"
               >
                 Kontakta mig
