@@ -4,13 +4,89 @@ import { v4 as uuidv4 } from 'uuid'
 export const projectsData = [
   {
     id: 1,
+    title: 'Urshults bilservice',
+    url: 'https://test1.craftwaresweden.se/',
+    category: 'Webbsida',
+    img: '/images/urshultsbilservice/urshults-cover.png',
+    ProjectHeader: {
+      title: 'Urshultsbilservice',
+      publishDate: 'Mars 6, 2025',
+      tags: 'Webbsida'
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: 'urshultsbilservice-1',
+        img: '/images/urshultsbilservice/urshult-4.png'
+      },
+      {
+        id: uuidv4(),
+        title: 'urshultsbilservice-2',
+        img: '/images/urshultsbilservice/urshult-2.png'
+      },
+      {
+        id: uuidv4(),
+        title: 'urshultsbilservice-3',
+        img: '/images/urshultsbilservice/urshult-3.png'
+      },
+    ],
+    ProjectInfo: {
+      ClientHeading: 'Om klienten',
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: 'Namn: ',
+          details: 'Natum AB'
+        },
+        {
+          id: uuidv4(),
+          title: 'Typ av applikation: ',
+          details: 'Webbsida'
+        },
+        {
+          id: uuidv4(),
+          title: 'Klicka här för att komma till hemsidan',
+          details: 'https://test1.craftwaresweden.se/',
+          isLink: true
+        }
+      ],
+      Technologies: [
+        {
+          title: 'Verktyg och teknik',
+          techs: [
+            'TypeScript',
+            'Next.js',
+            'Tailwind CSS',
+            'Responsive Design'
+          ]
+        }
+      ],
+      ProjectDetailsHeading: 'Översikt',
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details: 'En modern och responsiv webbsida för Urshultsbilservice som presenterar deras tjänster och verksamhet inom bilservice. Webbplatsen är utvecklad med fokus på användarvänlighet och tillgänglighet på alla enheter.'
+        },
+        {
+          id: uuidv4(),
+          details: 'Projektet utvecklades med Next.js och TypeScript för att säkerställa en robust kodstruktur och bättre prestanda. Tailwind CSS användes för att skapa ett modernt och responsivt gränssnitt som fungerar lika bra på mobila enheter som på desktop.'
+        },
+        {
+          id: uuidv4(),
+          details: 'Webbplatsen är optimerad för sökmotorer och har snabb laddningstid, vilket förbättrar användarupplevelsen och synligheten online för Urshultsbilservice.'
+        }
+      ]
+    }
+  },
+  {
+    id: 2,
     title: 'Bossa Care',
     url: 'https://bossacare.se/',
     category: 'Webbsida',
     img: '/images/bossa care home page.png',
     ProjectHeader: {
       title: 'Bossa Care',
-      publishDate: 'Januari 15, 2024',
+      publishDate: 'Januari 15, 2025',
       tags: 'Webbsida'
     },
     ProjectImages: [
@@ -79,7 +155,7 @@ export const projectsData = [
     }
   },
   {
-    id: 2,
+    id: 3,
     title: 'Hitta vikarie',
     url: 'https://hittavikarie.dongzhutan.com/',
     category: 'Webbapplikation',
@@ -143,28 +219,28 @@ export const projectsData = [
       ProjectDetails: [
         {
           id: uuidv4(),
-          details: 'En modern webbplattform som förenklar matchningen mellan arbetsgivare och arbetssökande för deltidsjobb. Plattformen erbjuder ett effektivt system där arbetssökande kan registrera sin tillgänglighet och kompetens, medan arbetsgivare enkelt kan hitta lämpliga kandidater.'
+          details: 'Denna webbsidan tillåter människor att logga in och skapa ett konto hos Hitta vikarie. Efter inloggning som vikarie kan användaren se lediga tjänster och lägga upp sina lediga arbetstider.'
         },
         {
           id: uuidv4(),
-          details: 'Plattformen utmärker sig genom sina avancerade filtreringsmöjligheter och ett användarvänligt gränssnitt som gör det enkelt för både arbetsgivare och arbetssökande att hitta rätt matchning.'
+          details: 'Företag kan också logga in och lägga ut lediga tjänster som alla vikarier kan se och ansöka till. Företag kan enkelt hitta vikarier baserat på deras tillgänglighet och kompetens.'
         },
         {
           id: uuidv4(),
-          details: 'Som mitt första fullstack-projekt gav utvecklingen av denna plattform mig värdefull erfarenhet av React och modern webbutveckling.'
+          details: 'All data lagras i MongoDB, vilket ger en flexibel och skalbar lösning för att hantera användarinformation, tjänster och ansökningar. Plattformen erbjuder ett användarvänligt gränssnitt med avancerade filtreringsmöjligheter för att underlätta matchningen mellan arbetsgivare och arbetssökande.'
         }
       ]
     }
   },
   {
-    id: 3,
+    id: 4,
     title: 'Weather Forecast',
     url: 'https://weatherforecast.dongzhutan.com/',
     category: 'Webbapplikation',
     img: '/images/weather-app-2.png',
     ProjectHeader: {
       title: 'Weather Forecast',
-      publishDate: 'Dec 20, 2023',
+      publishDate: 'Augusti 20, 2024',
       tags: 'Webbapplikation'
     },
     ProjectImages: [
