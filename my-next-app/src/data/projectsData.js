@@ -5,7 +5,7 @@ export const projectsData = [
   {
     id: 1,
     title: 'Urshults bilservice',
-    url: 'https://test1.craftwaresweden.se/',
+    url: 'https://natumtest4.craftwaresweden.se/',
     category: 'Webbsida',
     img: '/images/urshultsbilservice/urshults-cover.png',
     ProjectHeader: {
@@ -46,7 +46,7 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Klicka här för att komma till hemsidan',
-          details: 'https://test1.craftwaresweden.se/',
+          details: 'https://natumtest4.craftwaresweden.se/',
           isLink: true
         }
       ],
