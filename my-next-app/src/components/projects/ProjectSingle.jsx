@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Link from 'next/link'
-
-const imageStyle = { maxWidth: '100%', height: 'auto' }
-
 
 const ProjectSingle = (props) => {
+  // Get first 3 technologies to display (to keep the card clean)
+  const displayTechs = props.ProjectInfo?.Technologies?.[0]?.techs?.slice(0, 3)?.join(', ') || ''
+  
   return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -16,11 +15,11 @@ const ProjectSingle = (props) => {
 			  delay: 0.15,
 			}}
 		>
-			<Link
-				href="/projects/[id]"
-				as={'/projects/' + props.id}
-				aria-label="Single Project"
-				passHref
+			<a
+				href={props.url}
+				aria-label="Visit Project Website"
+				target="_blank"
+				rel="noopener noreferrer"
 			>
 				<div style={{ 
 					height: '385px',
@@ -31,7 +30,7 @@ const ProjectSingle = (props) => {
 					display: 'flex',
 					flexDirection: 'column'
 				}}>
-					<div style={{ height: '380px', position: 'relative' }}>
+					<div style={{ height: '320px', position: 'relative' }}>
 						<Image
 							src={props.img}
 							alt={props.title}
@@ -41,15 +40,16 @@ const ProjectSingle = (props) => {
 						/>
 					</div>
 					<div style={{ 
-						padding: '2rem',
+						padding: '1.5rem',
 						textAlign: 'center',
 						background: 'white'
 					}}>
 						<h3 className="font-general-medium text-2xl text-ternary-dark">{props.title}</h3>
-						<p className="text-gray-500 text-sm mt-2">{props.category}</p>
+						<p className="text-gray-500 text-sm mt-1">{props.category}</p>
+						<p className="text-indigo-500 text-xs mt-2 italic">{displayTechs}</p>
 					</div>
 				</div>
-			</Link>
+			</a>
 		</motion.div>
   )
 }
