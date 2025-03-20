@@ -5,12 +5,12 @@ import PagesMetaHead from '../PagesMetaHead'
 
 const DefaultLayout = ({ children }) => {
   return (
-		<>
+		<div className="flex flex-col min-h-screen">
 			<PagesMetaHead />
 			<AppHeader />
-			<div>{children}</div>
+			<main className="flex-grow">{children}</main>
 			<AppFooter />
-		</>
+		</div>
   )
 }
 

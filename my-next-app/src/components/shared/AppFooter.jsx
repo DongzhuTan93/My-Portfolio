@@ -16,30 +16,32 @@ const socialLinks = [
 
 function AppFooter () {
   return (
-		<div className="container mx-auto">
-			<div className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light">
-				{/* Footer social links */}
-				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
-					<p className="text-2xl mb-6 sm:mb-8">
-						Följ mig
-					</p>
-					<ul className="flex gap-4 sm:gap-8">
-						{socialLinks.map((link) => (
-							<a
-								href={link.url}
-								target="__blank"
-								key={link.id}
-								className="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm p-4 duration-300"
-							>
-								<i className="text-xl sm:text-2xl md:text-3xl">
-									{link.icon}
-								</i>
-							</a>
-						))}
-					</ul>
+		<footer className="w-full bg-secondary-light">
+			<div className="container mx-auto px-4 sm:px-6">
+				<div className="pt-10 sm:pt-20 pb-8 border-t-2 border-primary-light">
+					{/* Footer social links */}
+					<div className="font-general-regular flex flex-col justify-center items-center mb-8 sm:mb-12">
+						<p className="text-xl sm:text-2xl mb-4 sm:mb-6">
+							Följ mig
+						</p>
+						<ul className="flex gap-4 sm:gap-8">
+							{socialLinks.map((link) => (
+								<a
+									href={link.url}
+									target="__blank"
+									key={link.id}
+									className="text-gray-400 hover:text-indigo-500 cursor-pointer rounded-lg bg-gray-50 hover:bg-gray-100 shadow-sm p-3 sm:p-4 duration-300"
+								>
+									<i className="text-lg sm:text-xl md:text-2xl">
+										{link.icon}
+									</i>
+								</a>
+							))}
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
+		</footer>
   )
 }
 
