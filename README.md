@@ -3,7 +3,7 @@
 ***
 
 ### 1. Home page:
-![Home page](my-next-app/public/images/home-page-readme.png)
+![Home page](my-next-app/public/images/home-page.png)
 
 ***
 
