@@ -2,7 +2,8 @@ import { useState } from 'react'
 
 const selectOptions = [
   'Webbapplikation',
-  'Webbsida'
+  'Webbsida',
+  'Applikation'
 ]
 
 function ProjectsFilter({ setSelectProject }) {

@@ -4,6 +4,72 @@ import { v4 as uuidv4 } from 'uuid'
 export const projectsData = [
   {
     id: 1,
+    title: 'Flutter App',
+    url: 'https://github.com/DongzhuTan93/idrott-app',
+    category: 'Applikation',
+    img: '/images/Imtp-app.png',
+    ProjectHeader: {
+      title: 'Flutter App',
+      publishDate: 'Januari 10, 2025',
+      tags: 'Applikation'
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: 'imtp-app-main',
+        img: '/images/Imtp-app.png'
+      }
+    ],
+    ProjectInfo: {
+      ClientHeading: 'Om projektet',
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: 'Namn: ',
+          details: 'IMTP Strength Measurement App'
+        },
+        {
+          id: uuidv4(),
+          title: 'Typ av applikation: ',
+          details: 'Mobil Applikation'
+        },
+        {
+          id: uuidv4(),
+          title: 'Klicka här för att komma till GitHub',
+          details: 'https://github.com/DongzhuTan93/idrott-app',
+          isLink: true
+        }
+      ],
+      Technologies: [
+        {
+          title: 'Verktyg och teknik',
+          techs: [
+            'Dart',
+            'Flutter',
+            'C++',
+            'CMake'
+          ]
+        }
+      ],
+      ProjectDetailsHeading: 'Översikt',
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details: 'En omfattande mobilapplikation för mätning av styrka med Isometric Mid-thigh Pull (IMTP) övningen. Detta projekt kombinerar hårdvarusensorer, mikrocontroller firmware och en Flutter mobilapplikation för att fånga, bearbeta, lagra och visualisera styrkedata.'
+        },
+        {
+          id: uuidv4(),
+          details: 'Applikationen fokuserar på att utveckla ett mobilt verktyg för att mäta styrka med IMTP-övningen. En lastcellsensor används för att fånga kraften som utövas under dragningen. Denna data bearbetas sedan och presenteras i ett intuitivt och användarvänligt gränssnitt.'
+        },
+        {
+          id: uuidv4(),
+          details: 'Projektet inkluderar IoT-integration med ESP32 mikrocontroller, MQTT-kommunikation för realtidsdata, och omfattande datavisualisering för prestandaanalys. Applikationen stöder både Android och iOS plattformar.'
+        }
+      ]
+    }
+  },
+  {
+    id: 2,
     title: 'Urshults bilservice',
     url: 'https://urshults-bilservice.se/',
     category: 'Webbsida',
@@ -79,7 +145,7 @@ export const projectsData = [
     }
   },
   {
-    id: 2,
+    id: 3,
     title: 'Bossa Care',
     url: 'https://bossacare.se/',
     category: 'Webbsida',
@@ -155,7 +221,7 @@ export const projectsData = [
     }
   },
   {
-    id: 3,
+    id: 4,
     title: 'Hitta vikarie',
     url: 'https://hittavikarie.dongzhutan.com/',
     category: 'Webbapplikation',
@@ -233,7 +299,7 @@ export const projectsData = [
     }
   },
   {
-    id: 4,
+    id: 5,
     title: 'Weather Forecast',
     url: 'https://weatherforecast.dongzhutan.com/',
     category: 'Webbapplikation',

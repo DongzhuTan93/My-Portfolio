@@ -286,3 +286,21 @@ a {
   transform: scale(1.02);
   transition: transform 0.3s ease;
 }
+
+/* Special styling for Flutter App mobile image */
+.flutter-app-image {
+  object-fit: contain !important;
+  object-position: center !important;
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+/* Ensure Flutter App project shows the full mobile phone */
+img[src="/images/Imtp-app.png"] {
+  object-fit: contain !important;
+  object-position: center !important;
+  background-color: #f8f9fa;
+  padding: 3rem;
+  max-height: 200px !important;
+  width: auto !important;
+}

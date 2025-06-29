@@ -46,7 +46,7 @@ const ProjectSingle = (props) => {
 					}}>
 						<h3 className="font-general-medium text-2xl text-ternary-dark">{props.title}</h3>
 						<p className="text-gray-500 text-sm mt-1">{props.category}</p>
-						<p className="text-indigo-500 text-xs mt-2 italic">{displayTechs}</p>
+						<p className="text-indigo-500 text-sm mt-2 italic font-medium">{displayTechs}</p>
 					</div>
 				</div>
 			</a>

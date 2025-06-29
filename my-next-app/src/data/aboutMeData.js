@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid'
 export const aboutMeData = [
   {
     id: uuidv4(),
-    bio: 'Hej! Jag är webbprogrammeringstudent vid Linnéuniversitetet och kommer att ta min kandidatexamen till sommaren. Jag brinner för både frontend- och backend-utveckling och har en stark passion för moderna tekniker och ramverk. Jag trivs med att arbeta agilt och i team.'
+    bio: 'Hej! Jag är en full-stack utvecklare som brinner för både frontend- och backend-utveckling och har en stark passion för moderna tekniker och ramverk. Jag trivs med att arbeta agilt och i team.'
   },
   {
     id: uuidv4(),
