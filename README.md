@@ -1,4 +1,4 @@
-### Hej! Jag heter Dong och här är min portfolio: 
+### Hej! Jag heter Dong och här är min portfolio: https://portfolio.dongzhutan.com/ 
 
 ***
 
@@ -6,5 +6,3 @@
 ![Home page](my-next-app/public/images/home-page.png)
 
 ***
-
-### 2. Portfolio URL: https://portfolio.dongzhutan.com/
