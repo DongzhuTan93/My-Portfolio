@@ -4,6 +4,77 @@ import { v4 as uuidv4 } from 'uuid'
 export const projectsData = [
   {
     id: 1,
+    title: 'Lighthouse Bot',
+    url: 'https://lighthouse.dongzhutan.com:8443/',
+    category: 'Webbapplikation',
+    img: '/images/lighthouse-bot.jpg',
+    ProjectHeader: {
+      title: 'Lighthouse Bot',
+      publishDate: 'December 15, 2024',
+      tags: 'Webbapplikation'
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: 'lighthouse-bot-main',
+        img: '/images/lighthouse-bot.jpg'
+      }
+    ],
+    ProjectInfo: {
+      ClientHeading: 'Om projektet',
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: 'Namn: ',
+          details: 'Lighthouse Bot'
+        },
+        {
+          id: uuidv4(),
+          title: 'Typ av applikation: ',
+          details: 'Webbapplikation'
+        },
+        {
+          id: uuidv4(),
+          title: 'Status: ',
+          details: 'Under utveckling'
+        },
+        {
+          id: uuidv4(),
+          title: 'Klicka här för att komma till applikationen',
+          details: 'https://lighthouse.dongzhutan.com:8443/',
+          isLink: true
+        }
+      ],
+      Technologies: [
+        {
+          title: 'Verktyg och teknik',
+          techs: [
+            'AI',
+            'Python',
+            'JavaScript',
+            'Jupyter Notebook'
+          ]
+        }
+      ],
+      ProjectDetailsHeading: 'Översikt',
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details: 'Lighthouse Bot är en intelligent webbapplikation som använder artificiell intelligens för att analysera och optimera webbsidors prestanda. Projektet kombinerar moderna AI-tekniker med webbutveckling för att ge användarna detaljerade insikter om deras webbsidors hastighet och tillgänglighet.'
+        },
+        {
+          id: uuidv4(),
+          details: 'Applikationen är byggd med Python för backend-logiken och AI-modeller, JavaScript för frontend-interaktionen, och Jupyter Notebook för dataanalys och prototyping. Bot:en kan automatiskt scanna webbsidor och ge förbättringsförslag baserat på Google Lighthouse metriker.'
+        },
+        {
+          id: uuidv4(),
+          details: 'Projektet fokuserar på att demokratisera webbprestandaoptimering genom att göra avancerade analysverktyg tillgängliga för alla utvecklare, oavsett teknisk bakgrund.'
+        }
+      ]
+    }
+  },
+  {
+    id: 2,
     title: 'Flutter App',
     url: 'https://github.com/DongzhuTan93/idrott-app',
     category: 'Applikation',
@@ -69,7 +140,7 @@ export const projectsData = [
     }
   },
   {
-    id: 2,
+    id: 3,
     title: 'Urshults bilservice',
     url: 'https://urshults-bilservice.se/',
     category: 'Webbsida',
@@ -145,7 +216,7 @@ export const projectsData = [
     }
   },
   {
-    id: 3,
+    id: 4,
     title: 'Bossa Care',
     url: 'https://bossacare.se/',
     category: 'Webbsida',
@@ -221,7 +292,7 @@ export const projectsData = [
     }
   },
   {
-    id: 4,
+    id: 5,
     title: 'Hitta vikarie',
     url: 'https://hittavikarie.dongzhutan.com/',
     category: 'Webbapplikation',
@@ -299,7 +370,7 @@ export const projectsData = [
     }
   },
   {
-    id: 5,
+    id: 6,
     title: 'Weather Forecast',
     url: 'https://weatherforecast.dongzhutan.com/',
     category: 'Webbapplikation',

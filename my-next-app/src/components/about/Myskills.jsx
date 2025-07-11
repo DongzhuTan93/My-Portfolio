@@ -2,8 +2,8 @@ function MySkills() {
 	const skills = [
 	  "JavaScript", "TypeScript", "Java", "React.js",
 	  "Express.js", "Node.js", "MongoDB", "Next.js",
-	  "Figma", "IMovie", "Tailwind CSS", "Kubernetes",
-	  "Dart", "Flutter"
+	  "Figma", "IMovie", "Tailwind CSS", 
+	  "Dart", "Flutter", "Python", 
 	];
   
 	return (
