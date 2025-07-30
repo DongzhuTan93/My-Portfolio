@@ -5,7 +5,7 @@ export const projectsData = [
   {
     id: 1,
     title: 'Lighthouse Bot',
-    url: 'https://lighthouse.dongzhutan.com:8443/',
+    url: 'https://light.vild.ly/',
     category: 'Webbapplikation',
     img: '/images/lighthouse-bot.jpg',
     ProjectHeader: {
@@ -41,7 +41,7 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: 'Klicka här för att komma till applikationen',
-          details: 'https://lighthouse.dongzhutan.com:8443/',
+          details: 'https://light.vild.ly/',
           isLink: true
         }
       ],
