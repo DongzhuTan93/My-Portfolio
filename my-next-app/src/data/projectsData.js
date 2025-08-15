@@ -78,7 +78,7 @@ export const projectsData = [
     title: 'Flutter App',
     url: 'https://github.com/DongzhuTan93/idrott-app',
     category: 'Applikation',
-    img: '/images/Imtp-app.png',
+    img: '/images/Imtp-app.jpg',
     ProjectHeader: {
       title: 'Flutter App',
       publishDate: 'Januari 10, 2025',
@@ -88,7 +88,7 @@ export const projectsData = [
       {
         id: uuidv4(),
         title: 'imtp-app-main',
-        img: '/images/Imtp-app.png'
+        img: '/images/Imtp-app.jpg'
       }
     ],
     ProjectInfo: {
@@ -144,7 +144,7 @@ export const projectsData = [
     title: 'Urshults bilservice',
     url: 'https://urshults-bilservice.se/',
     category: 'Webbsida',
-    img: '/images/urshultsbilservice/urshults-cover.png',
+    img: '/images/urshultsbilservice/urshults-cover.jpg',
     ProjectHeader: {
       title: 'Urshultsbilservice',
       publishDate: 'Mars 6, 2025',
@@ -153,19 +153,9 @@ export const projectsData = [
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'urshultsbilservice-1',
-        img: '/images/urshultsbilservice/urshult-4.png'
-      },
-      {
-        id: uuidv4(),
-        title: 'urshultsbilservice-2',
-        img: '/images/urshultsbilservice/urshult-2.png'
-      },
-      {
-        id: uuidv4(),
-        title: 'urshultsbilservice-3',
-        img: '/images/urshultsbilservice/urshult-3.png'
-      },
+        title: 'urshultsbilservice-main',
+        img: '/images/urshultsbilservice/urshults-cover.jpg'
+      }
     ],
     ProjectInfo: {
       ClientHeading: 'Om klienten',
@@ -220,7 +210,7 @@ export const projectsData = [
     title: 'Bossa Care',
     url: 'https://bossacare.se/',
     category: 'Webbsida',
-    img: '/images/bossa care home page.png',
+    img: '/images/bossa care home page.jpg',
     ProjectHeader: {
       title: 'Bossa Care',
       publishDate: 'Januari 15, 2025',
@@ -229,19 +219,9 @@ export const projectsData = [
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'bossa-care-home',
-        img: '/images/bossa care 1.png'
-      },
-      {
-        id: uuidv4(),
-        title: 'bossa-care-hand',
-        img: '/images/bossa care hand.png'
-      },
-      {
-        id: uuidv4(),
-        title: 'bossa-care-massage',
-        img: '/images/bossa care 2.png'
-      },
+        title: 'bossa-care-main',
+        img: '/images/bossa care home page.jpg'
+      }
     ],
     ProjectInfo: {
       ClientHeading: 'Om klienten',
@@ -305,18 +285,8 @@ export const projectsData = [
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'hitta-vikarie-2',
-        img: '/images/hitta-vikarie-2.png'
-      },
-      {
-        id: uuidv4(),
-        title: 'hitta-vikarie-1',
-        img: '/images/hitta-vikarie-1.jpg'
-      },
-      {
-        id: uuidv4(),
-        title: 'hitta-vikarie-3',
-        img: '/images/hitta-vikarie-3.png'
+        title: 'hitta-vikarie-main',
+        img: '/images/hitta-vikarie.jpg'
       }
     ],
     ProjectInfo: {
@@ -374,7 +344,7 @@ export const projectsData = [
     title: 'Weather Forecast',
     url: 'https://weatherforecast.dongzhutan.com/',
     category: 'Webbapplikation',
-    img: '/images/weather-app-2.png',
+    img: '/images/weather-app-2.jpg',
     ProjectHeader: {
       title: 'Weather Forecast',
       publishDate: 'Augusti 20, 2024',
@@ -383,18 +353,8 @@ export const projectsData = [
     ProjectImages: [
       {
         id: uuidv4(),
-        title: 'weather-app-1',
-        img: '/images/weather-app-1.png'
-      },
-      {
-        id: uuidv4(),
-        title: 'weather-app-3',
-        img: '/images/weather-app-3.png'
-      },
-      {
-        id: uuidv4(),
-        title: 'weather-app-4',
-        img: '/images/weather-app-4.png'
+        title: 'weather-app-main',
+        img: '/images/weather-app-2.jpg'
       }
     ],
     ProjectInfo: {
